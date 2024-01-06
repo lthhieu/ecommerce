@@ -16,7 +16,7 @@ async function bootstrap() {
     defaultVersion: "1"
   });
   //global pipe
-  app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
+  app.useGlobalPipes(new ValidationPipe());
   //global response interceptor
   const reflector = app.get(Reflector);
   app.useGlobalInterceptors(new TransformInterceptor(reflector));
