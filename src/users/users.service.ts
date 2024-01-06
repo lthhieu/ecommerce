@@ -4,10 +4,15 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { User } from './schemas/user.schema';
 import { Model } from 'mongoose';
+import { genSaltSync, hashSync } from 'bcryptjs';
 
 @Injectable()
 export class UsersService {
   constructor(@InjectModel(User.name) private userModel: Model<User>) { }
+  hashPassword(plaintext: string) {
+    const salt = genSaltSync(10);
+    return hashSync(plaintext, salt);
+  }
   async create(createUserDto: CreateUserDto) {
     //check mail exist
     let check = await this.userModel.findOne({ email: createUserDto.email })
@@ -15,8 +20,13 @@ export class UsersService {
       throw new BadRequestException('Email is existed')
     }
     //create
-    let newUser = this.userModel.create(createUserDto)
-    return newUser
+    let createNewUser = this.userModel.create({
+      ...createUserDto,
+      password: this.hashPassword(createUserDto.password)
+    })
+    return {
+      _id: (await createNewUser)._id
+    }
   }
 
   findAll() {
