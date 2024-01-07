@@ -7,6 +7,7 @@ import { MongooseConfigService } from './configs/mongoose.config';
 import { UsersModule } from './users/users.module';
 import { AddressesModule } from './addresses/addresses.module';
 import { ProductsModule } from './products/products.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -15,7 +16,8 @@ import { ProductsModule } from './products/products.module';
   }),
   UsersModule,
   AddressesModule,
-  ProductsModule],
+  ProductsModule,
+  AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })

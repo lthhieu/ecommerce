@@ -4,7 +4,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { User } from './schemas/user.schema';
 import { Model } from 'mongoose';
-import { genSaltSync, hashSync } from 'bcryptjs';
+import { genSaltSync, hashSync, compareSync } from 'bcryptjs';
 
 @Injectable()
 export class UsersService {
@@ -13,9 +13,15 @@ export class UsersService {
     const salt = genSaltSync(10);
     return hashSync(plaintext, salt);
   }
+  async findOneByEmail(email: string) {
+    return await this.userModel.findOne({ email })
+  }
+  comparePassword(pass: string, hash: string) {
+    return compareSync(pass, hash)
+  }
   async create(createUserDto: CreateUserDto) {
     //check mail exist
-    let check = await this.userModel.findOne({ email: createUserDto.email })
+    let check = await this.findOneByEmail(createUserDto.email)
     if (check) {
       throw new BadRequestException('Email is existed')
     }
@@ -33,7 +39,7 @@ export class UsersService {
     return `This action returns all users`;
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return `This action returns a #${id} user`;
   }
 
