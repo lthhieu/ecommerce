@@ -28,11 +28,11 @@ export class User {
     @Prop({ type: mongoose.Schema.Types.Array })
     cart: mongoose.Schema.Types.ObjectId[];
 
-    @Prop({ type: { type: mongoose.Schema.Types.ObjectId, ref: Address.name } })
-    address: Address;
+    @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: Address.name })
+    address: Address[];
 
-    @Prop({ type: { type: mongoose.Schema.Types.ObjectId, ref: Product.name } })
-    wishlist: Product;
+    @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: Product.name })
+    wishlist: Product[];
 
     @Prop({ default: false })
     isBlocked: boolean;
