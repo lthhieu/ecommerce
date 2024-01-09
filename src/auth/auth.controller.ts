@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Request, Res, UseGuards } from '@nestjs/common';
 import { LocalAuthGuard } from './local-auth.guard';
 import { Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { USER_LOGINED, USER_PROFILE, USER_REFRESH_TOKEN } from 'src/configs/response.constants';
+import { USER_LOGINED, USER_LOGOUTED, USER_PROFILE, USER_REFRESH_TOKEN } from 'src/configs/response.constants';
 import { AuthService } from './auth.service';
 import { Response } from 'express';
 import { IUser } from 'src/configs/define.interface';
@@ -34,5 +34,11 @@ export class AuthController {
     @Post('refresh-access-token')
     async refresh(@Request() req) {
         return this.authService.refreshAccessToken(req);
+    }
+
+    @ResponseMessage(USER_LOGOUTED)
+    @Post('logout')
+    async logout(@User() user: IUser, @Res({ passthrough: true }) response: Response) {
+        return this.authService.logout(user, response);
     }
 }

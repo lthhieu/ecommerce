@@ -69,6 +69,14 @@ export class AuthService {
         } catch (e) {
             throw new BadRequestException(TOKEN_EXPIRED)
         }
+    }
 
+    logout = async (user: IUser, response: Response) => {
+        const { _id } = user
+        //refreshToken = null
+        await this.usersService.updateRefreshToken(null, _id)
+        //delete cookies
+        response.clearCookie('refresh_token', { httpOnly: true, secure: true })
+        return "ok"
     }
 }
