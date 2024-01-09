@@ -9,8 +9,11 @@ export class MailService {
             to: 'vtinhoc91@gmail.com', // list of receivers
             from: 'noreply@nestjs.com', // sender address
             subject: 'Testing Nest MailerModule ✔', // Subject line
-            text: 'welcome', // plaintext body
-            html: '<b>welcome</b>', // HTML body content
+            template: 'forgot-password',
+            context: {
+                receiver: "Khách hàng 1",
+                email: 'hieuvaxuan@gmail.com'
+            }
         });
     }
 }
