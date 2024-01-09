@@ -1,10 +1,9 @@
 import { Controller, Get, Post, Request, Res, UseGuards } from '@nestjs/common';
 import { LocalAuthGuard } from './local-auth.guard';
 import { Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { USER_LOGINED, USER_PROFILE } from 'src/configs/response.constants';
+import { USER_LOGINED, USER_PROFILE, USER_REFRESH_TOKEN } from 'src/configs/response.constants';
 import { AuthService } from './auth.service';
 import { Response } from 'express';
-import { JwtAuthGuard } from './jwt-auth.guard';
 import { IUser } from 'src/configs/define.interface';
 import { UsersService } from 'src/users/users.service';
 
@@ -17,8 +16,8 @@ export class AuthController {
     @UseGuards(LocalAuthGuard)
     @ResponseMessage(USER_LOGINED)
     @Post('login')
-    async login(@User() user: IUser, @Res({ passthrough: true }) response: Response) {
-        return this.authService.login(user, response);
+    async login(@Request() req, @Res({ passthrough: true }) response: Response) {
+        return this.authService.login(req.user, response);
     }
 
     @ResponseMessage(USER_PROFILE)
@@ -28,5 +27,12 @@ export class AuthController {
         const profile = await this.usersService.findOneByEmail(email)
         const { password, refreshToken, role, ...result } = profile.toObject()
         return result;
+    }
+
+    @Public()
+    @ResponseMessage(USER_REFRESH_TOKEN)
+    @Post('refresh-access-token')
+    async refresh(@Request() req) {
+        return this.authService.refreshAccessToken(req);
     }
 }
