@@ -9,3 +9,4 @@ export const INVALID_TOKEN = 'Token Is Expired Or Not Found Bearer Token From He
 export const NOT_FOUND_REFRESH_TOKEN = 'Not Found Refresh Token From Cookies. Please Login Again!'
 export const TOKEN_EXPIRED = 'Token Is Expired. Please Login Again!'
 export const USER_LOGOUTED = 'User Logouted'
+export const MAIL_RESET_PASSWORD = 'Mail Reset Password'

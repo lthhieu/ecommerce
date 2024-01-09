@@ -8,6 +8,7 @@ import { UsersModule } from './users/users.module';
 import { AddressesModule } from './addresses/addresses.module';
 import { ProductsModule } from './products/products.module';
 import { AuthModule } from './auth/auth.module';
+import { MailModule } from './mail/mail.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -17,7 +18,8 @@ import { AuthModule } from './auth/auth.module';
   UsersModule,
   AddressesModule,
   ProductsModule,
-  AuthModule],
+  AuthModule,
+  MailModule],
   controllers: [AppController],
   providers: [AppService],
 })
