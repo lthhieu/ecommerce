@@ -10,3 +10,6 @@ export const NOT_FOUND_REFRESH_TOKEN = 'Not Found Refresh Token From Cookies. Pl
 export const TOKEN_EXPIRED = 'Token Is Expired. Please Login Again!'
 export const USER_LOGOUTED = 'User Logouted'
 export const MAIL_RESET_PASSWORD = 'Mail Reset Password'
+export const NOT_FOUND_EMAIL = 'Email Is Not Existed In System'
+export const RESET_PASSWORD = 'Reset Password Successfully'
+export const RESET_PASSWORD_TOKEN_EXPIRE = 'Token Is Expired. Please Requested New Reset Password '

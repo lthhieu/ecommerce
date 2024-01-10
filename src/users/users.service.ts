@@ -58,4 +58,25 @@ export class UsersService {
       refreshToken
     })
   }
+  updatePasswordToken = async (passwordResetToken: string, passwordResetExpire: string, id: string) => {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException('ID is invalid')
+    }
+    return await this.userModel.findByIdAndUpdate(id, {
+      passwordResetToken, passwordResetExpire
+    })
+  }
+  async checkResetPasswordToken(passwordResetToken: string) {
+    return await this.userModel.findOne({
+      passwordResetToken, passwordResetExpire: { $gt: Date.now() }
+    })
+  }
+  async resetPassword(password: string, id: string) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException('ID is invalid')
+    }
+    return await this.userModel.findByIdAndUpdate(id, {
+      password: this.hashPassword(password), passwordResetToken: null, passwordResetExpire: null, passwordChangeAt: Date.now()
+    })
+  }
 }
