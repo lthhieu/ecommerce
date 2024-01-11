@@ -5,6 +5,8 @@ import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { TransformInterceptor } from './configs/transform.interceptor';
 import cookieParser from 'cookie-parser';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
+import { PoliciesGuard } from './configs/policies.guard';
+import { CaslAbilityFactory } from './casl/casl-ability.factory/casl-ability.factory';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -26,6 +28,8 @@ async function bootstrap() {
   app.use(cookieParser());
   //global jwt guard
   app.useGlobalGuards(new JwtAuthGuard(reflector));
+  const caslAbilityFactory = app.get(CaslAbilityFactory)
+  app.useGlobalGuards(new PoliciesGuard(reflector, caslAbilityFactory))
   await app.listen(port);
 }
 bootstrap();

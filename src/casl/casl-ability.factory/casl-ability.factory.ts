@@ -2,6 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { Action, IUser } from "src/configs/define.interface";
 import { Ability, AbilityBuilder, AbilityClass, ExtractSubjectType, InferSubjects } from '@casl/ability'
 import { User } from "src/users/schemas/user.schema";
+import { FORBIDDEN } from "src/configs/response.constants";
 type Subjects = InferSubjects<typeof User> | 'all';
 
 export type AppAbility = Ability<[Action, Subjects]>;
@@ -16,7 +17,7 @@ export class CaslAbilityFactory {
         if (user.role === 'ADMIN') {
             can(Action.Manage, 'all'); // read-write access to everything
         } else {
-            cannot(Action.Read, User); // read-only access to everything
+            cannot(Action.Read, User).because(FORBIDDEN); // read-only access to everything
             can(Action.Update, User, { email: user.email });
         }
 

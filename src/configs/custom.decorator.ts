@@ -1,4 +1,5 @@
 import { ExecutionContext, SetMetadata, createParamDecorator } from '@nestjs/common'
+import { PolicyHandler } from './define.interface';
 
 export const ResponseMessageKey = 'ResponseMessageKey'
 export const ResponseMessage = (message: string) => SetMetadata(ResponseMessageKey, message)
@@ -12,3 +13,7 @@ export const User = createParamDecorator(
         return request.user;
     },
 );
+
+export const CHECK_POLICIES_KEY = 'check_policy';
+export const CheckPolicies = (...handlers: PolicyHandler[]) =>
+    SetMetadata(CHECK_POLICIES_KEY, handlers);
