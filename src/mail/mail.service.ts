@@ -1,6 +1,6 @@
 import { MailerService } from '@nestjs-modules/mailer';
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { NOT_FOUND_EMAIL, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { NOT_FOUND_EMAIL } from 'src/configs/response.constants';
 import { UsersService } from 'src/users/users.service';
 import crypto from 'crypto'
 import { ConfigService } from '@nestjs/config';
@@ -34,13 +34,5 @@ export class MailService {
             }
         });
         return { token }
-    }
-    async resetPassword(token: string, newPassword: string) {
-        //check token is valid
-        const passwordResetToken = crypto.createHash('sha256').update(token).digest('hex');
-        const checkToken = await this.usersService.checkResetPasswordToken(passwordResetToken)
-        if (!checkToken) throw new BadRequestException(RESET_PASSWORD_TOKEN_EXPIRE)
-        await this.usersService.resetPassword(newPassword, checkToken._id.toString())
-        return "ok"
     }
 }

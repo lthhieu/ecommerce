@@ -5,6 +5,8 @@ import { InjectModel } from '@nestjs/mongoose';
 import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
+import crypto from 'crypto'
+import { RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
 
 @Injectable()
 export class UsersService {
@@ -71,12 +73,15 @@ export class UsersService {
       passwordResetToken, passwordResetExpire: { $gt: Date.now() }
     })
   }
-  async resetPassword(password: string, id: string) {
-    if (!mongoose.Types.ObjectId.isValid(id)) {
+  async resetPassword(token: string, password: string) {
+    const passwordResetToken = crypto.createHash('sha256').update(token).digest('hex');
+    const checkToken = await this.checkResetPasswordToken(passwordResetToken)
+    if (!checkToken) throw new BadRequestException(RESET_PASSWORD_TOKEN_EXPIRE)
+    if (!mongoose.Types.ObjectId.isValid(checkToken._id)) {
       throw new BadRequestException('ID is invalid')
     }
-    return await this.userModel.findByIdAndUpdate(id, {
+    return await this.userModel.findByIdAndUpdate(checkToken._id, {
       password: this.hashPassword(password), passwordResetToken: null, passwordResetExpire: null, passwordChangeAt: Date.now()
-    })
+    }).select('_id')
   }
 }

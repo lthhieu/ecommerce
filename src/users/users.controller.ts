@@ -1,9 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+import { ResetPasswordUserDto, UpdateUserDto } from './dto/update-user.dto';
 import { Public, ResponseMessage, User as UserDecorator } from 'src/configs/custom.decorator';
-import { USER_CREATED } from 'src/configs/response.constants';
+import { RESET_PASSWORD, USER_CREATED } from 'src/configs/response.constants';
 import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
 import { Action, IUser } from 'src/configs/define.interface';
 import { User } from "src/users/schemas/user.schema";
@@ -33,6 +33,13 @@ export class UsersController {
     return this.usersService.findOne(id);
   }
 
+  @Public()
+  @Patch('reset-password')
+  @ResponseMessage(RESET_PASSWORD)
+  async resetPassword(@Query('token') token: string, @Body() resetPasswordUserDto: ResetPasswordUserDto) {
+    return this.usersService.resetPassword(token, resetPasswordUserDto.password);
+  }
+
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
     return this.usersService.update(+id, updateUserDto);
@@ -42,4 +49,5 @@ export class UsersController {
   remove(@Param('id') id: string) {
     return this.usersService.remove(+id);
   }
+
 }
