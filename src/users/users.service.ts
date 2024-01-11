@@ -4,7 +4,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
-import { genSaltSync, hashSync, compareSync } from 'bcryptjs';
+import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 
 @Injectable()
 export class UsersService {
