@@ -9,6 +9,7 @@ import { AddressesModule } from './addresses/addresses.module';
 import { ProductsModule } from './products/products.module';
 import { AuthModule } from './auth/auth.module';
 import { MailModule } from './mail/mail.module';
+import { CaslModule } from './casl/casl.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -19,7 +20,8 @@ import { MailModule } from './mail/mail.module';
   AddressesModule,
   ProductsModule,
   AuthModule,
-  MailModule],
+  MailModule,
+  CaslModule],
   controllers: [AppController],
   providers: [AppService],
 })

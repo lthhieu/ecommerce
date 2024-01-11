@@ -1,14 +1,18 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { ResponseMessage } from 'src/configs/custom.decorator';
+import { Public, ResponseMessage, User as UserDecorator } from 'src/configs/custom.decorator';
 import { USER_CREATED } from 'src/configs/response.constants';
-
+import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
+import { Action, IUser } from 'src/configs/define.interface';
+import { User } from "src/users/schemas/user.schema";
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) { }
+  constructor(private readonly usersService: UsersService,
+    private caslAbilityFactory: CaslAbilityFactory) { }
 
+  @Public()
   @Post()
   @ResponseMessage(USER_CREATED)
   create(@Body() createUserDto: CreateUserDto) {
@@ -16,8 +20,12 @@ export class UsersController {
   }
 
   @Get()
-  findAll() {
-    return this.usersService.findAll();
+  findAll(@UserDecorator() user: IUser) {
+    const ability = this.caslAbilityFactory.createForUser(user);
+    if (ability.can(Action.Read, User)) {
+      return this.usersService.findAll();
+    }
+    throw new ForbiddenException('Cannot access to endpoint!')
   }
 
   @Get(':id')
