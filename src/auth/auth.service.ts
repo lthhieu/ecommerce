@@ -35,7 +35,7 @@ export class AuthService {
             httpOnly: true,
             maxAge: ms(this.configService.get<string>('REFRESH_TOKEN_EXPIRE')) * 1000
         })
-        const { refreshToken, ...result } = updateRefreshToken.toObject();
+        const { refreshToken, password, role: roleUser, ...result } = updateRefreshToken.toObject();
         return {
             access_token: this.jwtService.sign(payload),
             user: result
