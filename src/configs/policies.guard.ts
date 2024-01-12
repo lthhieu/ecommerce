@@ -1,8 +1,9 @@
-import { CanActivate, ExecutionContext, Injectable } from "@nestjs/common";
+import { CanActivate, ExecutionContext, ForbiddenException, Injectable } from "@nestjs/common";
 import { Reflector } from "@nestjs/core";
-import { AppAbility, CaslAbilityFactory } from "src/casl/casl-ability.factory/casl-ability.factory";
-import { PolicyHandler } from "./define.interface";
+import { CaslAbilityFactory } from "src/casl/casl-ability.factory/casl-ability.factory";
 import { CHECK_POLICIES_KEY, IS_PUBLIC_KEY } from "./custom.decorator";
+import { ForbiddenError } from "@casl/ability";
+import { PolicyHandler } from "./define.interface";
 
 @Injectable()
 export class PoliciesGuard implements CanActivate {
@@ -28,14 +29,15 @@ export class PoliciesGuard implements CanActivate {
         const { user } = context.switchToHttp().getRequest();
         const ability = this.caslAbilityFactory.createForUser(user);
 
-        return policyHandlers.every((handler) =>
-            this.execPolicyHandler(handler, ability),
-        );
-    }
-    private execPolicyHandler(handler: PolicyHandler, ability: AppAbility) {
-        if (typeof handler === 'function') {
-            return handler(ability);
+        try {
+            policyHandlers.forEach((policy: PolicyHandler) => {
+                ForbiddenError.from(ability).throwUnlessCan(policy.action, policy.subject)
+            })
+            return true
+        } catch (e) {
+            if (e instanceof ForbiddenError) {
+                throw new ForbiddenException(e.message)
+            }
         }
-        return handler.handle(ability);
     }
 }

@@ -3,7 +3,7 @@ import { Action, IUser } from "src/configs/define.interface";
 import { Ability, AbilityBuilder, AbilityClass, ExtractSubjectType, InferSubjects } from '@casl/ability'
 import { User } from "src/users/schemas/user.schema";
 import { FORBIDDEN } from "src/configs/response.constants";
-type Subjects = InferSubjects<typeof User> | 'all';
+export type Subjects = InferSubjects<typeof User> | 'all';
 
 export type AppAbility = Ability<[Action, Subjects]>;
 

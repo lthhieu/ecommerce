@@ -1,14 +1,11 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ResetPasswordUserDto, UpdateUserDto } from './dto/update-user.dto';
 import { CheckPolicies, Public, ResponseMessage, User as UserDecorator } from 'src/configs/custom.decorator';
 import { RESET_PASSWORD, USER_CREATED } from 'src/configs/response.constants';
-import { AppAbility, CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
 import { Action, IUser } from 'src/configs/define.interface';
 import { User } from "src/users/schemas/user.schema";
-import { ForbiddenError } from '@casl/ability';
-import { PoliciesGuard } from 'src/configs/policies.guard';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) { }
@@ -21,20 +18,9 @@ export class UsersController {
   }
 
   @Get()
-  @CheckPolicies((ability: AppAbility) => ability.can(Action.Read, User))
+  @CheckPolicies({ action: Action.Read, subject: User })
+  // @UseFilters(new HttpExceptionFilter())
   findAll() {
-    // const ability = this.caslAbilityFactory.createForUser(user);
-    // if (!ability.can(Action.Read, User)) {
-    //   throw new ForbiddenException('Cannot access to endpoint!')
-    // }
-    // try {
-    //   ForbiddenError.from(ability).throwUnlessCan(Action.Read, User)
-    //   return this.usersService.findAll();
-    // } catch (e) {
-    //   if (e instanceof ForbiddenError) {
-    //     throw new ForbiddenException(e.message)
-    //   }
-    // }
     return this.usersService.findAll();
   }
 

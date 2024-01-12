@@ -1,4 +1,4 @@
-import { AppAbility } from "src/casl/casl-ability.factory/casl-ability.factory";
+import { Subjects } from "src/casl/casl-ability.factory/casl-ability.factory";
 
 export interface IUser {
     _id: string;
@@ -13,10 +13,7 @@ export enum Action {
     Delete = 'delete',
 }
 
-interface IPolicyHandler {
-    handle(ability: AppAbility): boolean;
+export interface PolicyHandler {
+    action: Action,
+    subject: Subjects
 }
-
-type PolicyHandlerCallback = (ability: AppAbility) => boolean;
-
-export type PolicyHandler = IPolicyHandler | PolicyHandlerCallback;
