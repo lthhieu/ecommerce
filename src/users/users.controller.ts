@@ -1,14 +1,17 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters, ForbiddenException } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ResetPasswordUserDto, UpdateUserDto } from './dto/update-user.dto';
-import { CheckPolicies, Public, ResponseMessage, User as UserDecorator } from 'src/configs/custom.decorator';
+import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
 import { RESET_PASSWORD, USER_CREATED } from 'src/configs/response.constants';
 import { Action, IUser } from 'src/configs/define.interface';
-import { User } from "src/users/schemas/user.schema";
+import { UserSubject } from 'src/configs/define.class';
+import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
+import { ForbiddenError } from '@casl/ability';
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) { }
+  constructor(private readonly usersService: UsersService,
+    private caslAbilityFactory: CaslAbilityFactory) { }
 
   @Public()
   @Post()
@@ -18,15 +21,24 @@ export class UsersController {
   }
 
   @Get()
-  @CheckPolicies({ action: Action.Read, subject: User })
-  // @UseFilters(new HttpExceptionFilter())
+  @CheckPolicies({ action: Action.Read, subject: UserSubject })
   findAll() {
     return this.usersService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.usersService.findOne(id);
+  findOne(@Param('id') id: string, @User() user: IUser) {
+    const ability = this.caslAbilityFactory.createForUser(user)
+    try {
+      const userToRead = new UserSubject()
+      userToRead._id = id
+      ForbiddenError.from(ability).throwUnlessCan(Action.Read, userToRead)
+      return this.usersService.findOne(id);
+    } catch (e) {
+      if (e instanceof ForbiddenError) {
+        throw new ForbiddenException(e.message)
+      }
+    }
   }
 
   @Public()
@@ -37,13 +49,32 @@ export class UsersController {
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
+  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto, @User() user: IUser) {
+    const ability = this.caslAbilityFactory.createForUser(user)
+    try {
+      const userToUpd = new UserSubject()
+      userToUpd._id = id
+      ForbiddenError.from(ability).throwUnlessCan(Action.Update, userToUpd)
+      return this.usersService.update(id, updateUserDto);
+    } catch (e) {
+      if (e instanceof ForbiddenError) {
+        throw new ForbiddenException(e.message)
+      }
+    }
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.usersService.remove(+id);
+  remove(@Param('id') id: string, @User() user: IUser) {
+    const ability = this.caslAbilityFactory.createForUser(user)
+    try {
+      const userToDel = new UserSubject()
+      userToDel._id = id
+      ForbiddenError.from(ability).throwUnlessCan(Action.Delete, userToDel)
+      return this.usersService.remove(id);
+    } catch (e) {
+      if (e instanceof ForbiddenError) {
+        throw new ForbiddenException(e.message)
+      }
+    }
   }
-
 }
