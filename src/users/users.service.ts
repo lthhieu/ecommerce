@@ -6,7 +6,7 @@ import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
-import { RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { FOUND_EMAIL, INVALID_ID, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
 
 @Injectable()
 export class UsersService {
@@ -25,15 +25,15 @@ export class UsersService {
     //check mail exist
     let check = await this.findOneByEmail(createUserDto.email)
     if (check) {
-      throw new BadRequestException('Email is existed')
+      throw new BadRequestException(FOUND_EMAIL)
     }
     //create
-    let createNewUser = this.userModel.create({
+    let createNewUser = await this.userModel.create({
       ...createUserDto,
       password: this.hashPassword(createUserDto.password)
     })
     return {
-      _id: (await createNewUser)._id
+      _id: createNewUser._id
     }
   }
 
@@ -45,16 +45,36 @@ export class UsersService {
     return await this.userModel.findOne({ _id: id }).select('-password -refreshToken')
   }
 
-  update(id: string, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
+  async update(id: string, updateUserDto: UpdateUserDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const { email } = updateUserDto
+    const user = await this.findOneByEmail(email)
+    //check unique email
+    if (user && JSON.stringify(user._id) !== JSON.stringify(id)) {
+      throw new BadRequestException(FOUND_EMAIL)
+    }
+    const userUpd = await this.userModel.findOneAndUpdate({ _id: id }, updateUserDto)
+    if (!userUpd) {
+      throw new BadRequestException(NOT_USER_BY_ID)
+    }
+    return { _id: userUpd._id }
   }
 
-  remove(id: string) {
-    return `This action removes a #${id} user`;
+  async remove(id: string) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const userDel = await this.userModel.findOneAndDelete({ id })
+    if (!userDel) {
+      throw new BadRequestException(NOT_USER_BY_ID)
+    }
+    return { _id: userDel._id }
   }
   updateRefreshToken = async (refreshToken: string, id: string) => {
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      throw new BadRequestException('ID is invalid')
+      throw new BadRequestException(INVALID_ID)
     }
     return await this.userModel.findByIdAndUpdate(id, {
       refreshToken
@@ -62,7 +82,7 @@ export class UsersService {
   }
   updatePasswordToken = async (passwordResetToken: string, passwordResetExpire: string, id: string) => {
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      throw new BadRequestException('ID is invalid')
+      throw new BadRequestException(INVALID_ID)
     }
     return await this.userModel.findByIdAndUpdate(id, {
       passwordResetToken, passwordResetExpire
@@ -78,7 +98,7 @@ export class UsersService {
     const checkToken = await this.checkResetPasswordToken(passwordResetToken)
     if (!checkToken) throw new BadRequestException(RESET_PASSWORD_TOKEN_EXPIRE)
     if (!mongoose.Types.ObjectId.isValid(checkToken._id)) {
-      throw new BadRequestException('ID is invalid')
+      throw new BadRequestException(INVALID_ID)
     }
     return await this.userModel.findByIdAndUpdate(checkToken._id, {
       password: this.hashPassword(password), passwordResetToken: null, passwordResetExpire: null, passwordChangeAt: Date.now()
