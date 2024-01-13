@@ -21,3 +21,6 @@ export const FORBIDDEN_READ_BY_ID = 'You Don\'t Have Permission To Read Other Us
 export const FOUND_EMAIL = 'Email Is Existed In System'
 export const INVALID_ID = 'Id Is Not Invalid'
 export const NOT_USER_BY_ID = 'Cannot Found User With Your Id You Given'
+export const FORBIDDEN_DELETE_PRODUCT = 'You Don\'t Have Permission To Delete Product'
+export const FORBIDDEN_UPDATE_PRODUCT = 'You Don\'t Have Permission To Update Product'
+export const FORBIDDEN_CREATE_PRODUCT = 'You Don\'t Have Permission To Create Product'

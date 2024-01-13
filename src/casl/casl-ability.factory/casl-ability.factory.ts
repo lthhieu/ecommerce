@@ -1,9 +1,10 @@
 import { Injectable } from "@nestjs/common";
 import { Action, IUser } from "src/configs/define.interface";
 import { Ability, AbilityBuilder, AbilityClass, ExtractSubjectType, InferSubjects } from '@casl/ability'
-import { FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_USER, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE } from "src/configs/response.constants";
-import { UserSubject } from "src/configs/define.class";
-export type Subjects = InferSubjects<typeof UserSubject> | 'all';
+import { FORBIDDEN_CREATE_PRODUCT, FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_PRODUCT, FORBIDDEN_DELETE_USER, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE, FORBIDDEN_UPDATE_PRODUCT } from "src/configs/response.constants";
+import { ProductSubject, UserSubject } from "src/configs/define.class";
+export type Subjects = InferSubjects<typeof UserSubject> |
+    InferSubjects<typeof ProductSubject> | 'all';
 
 export type AppAbility = Ability<[Action, Subjects]>;
 
@@ -25,6 +26,10 @@ export class CaslAbilityFactory {
             can(Action.Update, UserSubject, { _id: { $eq: user._id } });
             cannot(Action.Read, UserSubject).because(FORBIDDEN_READ_BY_ID);
             can(Action.Read, UserSubject, { _id: { $eq: user._id } });
+            //product
+            cannot(Action.Create, ProductSubject).because(FORBIDDEN_CREATE_PRODUCT);
+            cannot(Action.Update, ProductSubject).because(FORBIDDEN_UPDATE_PRODUCT);
+            cannot(Action.Delete, ProductSubject).because(FORBIDDEN_DELETE_PRODUCT);
         }
 
         return build({
