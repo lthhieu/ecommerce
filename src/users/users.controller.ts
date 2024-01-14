@@ -3,7 +3,7 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ResetPasswordUserDto, UpdateUserDto } from './dto/update-user.dto';
 import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { RESET_PASSWORD, USER_CREATED } from 'src/configs/response.constants';
+import { RESET_PASSWORD, USER_CREATED, USER_FETCH_ALL, USER_FETCH_BY_ID } from 'src/configs/response.constants';
 import { Action, IUser } from 'src/configs/define.interface';
 import { UserSubject } from 'src/configs/define.class';
 import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
@@ -21,12 +21,14 @@ export class UsersController {
   }
 
   @Get()
+  @ResponseMessage(USER_FETCH_ALL)
   @CheckPolicies({ action: Action.Read, subject: UserSubject })
   findAll() {
     return this.usersService.findAll();
   }
 
   @Get(':id')
+  @ResponseMessage(USER_FETCH_BY_ID)
   findOne(@Param('id') id: string, @User() user: IUser) {
     const ability = this.caslAbilityFactory.createForUser(user)
     try {

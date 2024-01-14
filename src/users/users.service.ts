@@ -42,7 +42,14 @@ export class UsersService {
   }
 
   async findOne(id: string) {
-    return await this.userModel.findOne({ _id: id }).select('-password -refreshToken')
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const user = await this.userModel.findOne({ _id: id }).select('-password -refreshToken')
+    if (!user) {
+      throw new BadRequestException(NOT_USER_BY_ID)
+    }
+    return user
   }
 
   async update(id: string, updateUserDto: UpdateUserDto) {
@@ -66,7 +73,7 @@ export class UsersService {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-    const userDel = await this.userModel.findOneAndDelete({ id })
+    const userDel = await this.userModel.findOneAndDelete({ _id: id })
     if (!userDel) {
       throw new BadRequestException(NOT_USER_BY_ID)
     }
