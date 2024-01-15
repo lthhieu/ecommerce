@@ -41,7 +41,8 @@ export class Product {
     ratings: {
         star: Number,
         comment: string,
-        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: User }
+        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: User },
+        postedAt: Date
     }[]
 
     @Prop({ default: 0 })

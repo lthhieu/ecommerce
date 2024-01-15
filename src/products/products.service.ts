@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
-import { UpdateProductDto } from './dto/update-product.dto';
+import { UpdateProductDto, UpdateProductRatingDto } from './dto/update-product.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Product } from './schemas/product.schema';
 import mongoose, { Model } from 'mongoose';
@@ -8,6 +8,7 @@ import slugify from 'slugify';
 import { FOUND_SLUG, INVALID_ID, NOT_PRODUCT_BY_ID } from 'src/configs/response.constants';
 import aqp from 'api-query-params';
 import { IsEmpty } from 'class-validator';
+import { IUser } from 'src/configs/define.interface';
 
 @Injectable()
 export class ProductsService {
@@ -115,5 +116,37 @@ export class ProductsService {
       throw new BadRequestException(NOT_PRODUCT_BY_ID)
     }
     return { _id: productDel._id }
+  }
+
+  upsertRatings = async (id: string, user: IUser, updateProductRatingDto: UpdateProductRatingDto) => {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const { comment, postedAt, star } = updateProductRatingDto
+    let productToUdt = await this.findOne(id)
+    let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
+    if (checkRating) {
+      //update star and comment
+      let updatedRating = await this.productModel.updateOne({ "ratings.postedBy": user._id }, {
+        $set: {
+          "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
+        }
+      })
+      if (!updatedRating) {
+        throw new BadRequestException(NOT_PRODUCT_BY_ID)
+      }
+      return updatedRating
+    } else {
+      //insert
+      let updatedRating = await this.productModel.updateOne({ _id: id }, {
+        $push: {
+          ratings: { comment, postedAt, star, postedBy: user._id }
+        }
+      })
+      if (!updatedRating) {
+        throw new BadRequestException(NOT_PRODUCT_BY_ID)
+      }
+      return updatedRating
+    }
   }
 }

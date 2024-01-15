@@ -33,4 +33,5 @@ export const USER_FETCH_BY_ID = 'Fetch User By Id'
 export const PRODUCT_FETCH_ALL = 'All Products Are Fetched'
 export const PRODUCT_FETCH_BY_ID = 'Fetch Product By Id'
 export const NOT_PRODUCT_BY_ID = 'Cannot Found Product With Your Id You Given'
+export const PRODUCT_UPDATE_RATING = 'Product Updated Rating'
 

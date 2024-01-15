@@ -30,6 +30,7 @@ export class CaslAbilityFactory {
             cannot(Action.Create, ProductSubject).because(FORBIDDEN_CREATE_PRODUCT);
             cannot(Action.Update, ProductSubject).because(FORBIDDEN_UPDATE_PRODUCT);
             cannot(Action.Delete, ProductSubject).because(FORBIDDEN_DELETE_PRODUCT);
+            can(Action.Rating, ProductSubject);
         }
 
         return build({

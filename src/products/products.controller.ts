@@ -1,11 +1,11 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Query } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { CreateProductDto } from './dto/create-product.dto';
-import { UpdateProductDto } from './dto/update-product.dto';
-import { CheckPolicies, Public, ResponseMessage } from 'src/configs/custom.decorator';
-import { Action } from 'src/configs/define.interface';
+import { UpdateProductDto, UpdateProductRatingDto } from './dto/update-product.dto';
+import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
+import { Action, IUser } from 'src/configs/define.interface';
 import { ProductSubject } from 'src/configs/define.class';
-import { PRODUCT_CREATED, PRODUCT_DELETED, PRODUCT_FETCH_ALL, PRODUCT_FETCH_BY_ID, PRODUCT_UPDATED } from 'src/configs/response.constants';
+import { PRODUCT_CREATED, PRODUCT_DELETED, PRODUCT_FETCH_ALL, PRODUCT_FETCH_BY_ID, PRODUCT_UPDATED, PRODUCT_UPDATE_RATING } from 'src/configs/response.constants';
 
 @Controller('products')
 export class ProductsController {
@@ -30,6 +30,13 @@ export class ProductsController {
   @Public()
   findOne(@Param('id') id: string) {
     return this.productsService.findOne(id);
+  }
+
+  @ResponseMessage(PRODUCT_UPDATE_RATING)
+  @Patch('rating/:id')
+  @CheckPolicies({ action: Action.Rating, subject: ProductSubject })
+  updateRating(@Param('id') id: string, @User() user: IUser, @Body() updateProductRatingDto: UpdateProductRatingDto) {
+    return this.productsService.upsertRatings(id, user, updateProductRatingDto);
   }
 
   @ResponseMessage(PRODUCT_UPDATED)
