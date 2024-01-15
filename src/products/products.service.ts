@@ -6,6 +6,8 @@ import { Product } from './schemas/product.schema';
 import mongoose, { Model } from 'mongoose';
 import slugify from 'slugify';
 import { FOUND_SLUG, INVALID_ID, NOT_PRODUCT_BY_ID } from 'src/configs/response.constants';
+import aqp from 'api-query-params';
+import { IsEmpty } from 'class-validator';
 
 @Injectable()
 export class ProductsService {
@@ -34,8 +36,41 @@ export class ProductsService {
     }
   }
 
-  async findAll() {
-    return await this.productModel.find()
+  async findAll(page: number, limit: number, qs: string) {
+    let { filter, projection, population } = aqp(qs);
+    let { sort }: { sort: any } = aqp(qs);
+
+    delete filter.current
+    delete filter.pageSize
+
+    page = page ? page : 1
+    limit = limit ? limit : 10
+    let skip = (page - 1) * limit
+
+    const totalItems = (await this.productModel.find(filter)).length
+    const totalPages = Math.ceil(totalItems / limit)
+
+    if (IsEmpty(sort as any)) {
+      sort = '-updatedAt'
+    }
+
+    let products = await this.productModel.find(filter)
+      .skip(skip)
+      .limit(limit)
+      .sort(sort)
+      .select(projection)
+      .populate(population)
+      .exec();
+
+    return {
+      meta: {
+        current: page,
+        pageSize: limit,
+        pages: totalPages,
+        total: totalItems
+      },
+      result: products
+    }
   }
 
   async findOne(id: string) {
