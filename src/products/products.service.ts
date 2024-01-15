@@ -127,7 +127,7 @@ export class ProductsService {
     let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
     if (checkRating) {
       //update star and comment
-      let updatedRating = await this.productModel.updateOne({ "ratings.postedBy": user._id }, {
+      let updatedRating = await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
         $set: {
           "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
         }
