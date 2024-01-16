@@ -127,26 +127,28 @@ export class ProductsService {
     let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
     if (checkRating) {
       //update star and comment
-      let updatedRating = await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
+      await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
         $set: {
           "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
         }
       })
-      if (!updatedRating) {
-        throw new BadRequestException(NOT_PRODUCT_BY_ID)
-      }
-      return updatedRating
     } else {
       //insert
-      let updatedRating = await this.productModel.updateOne({ _id: id }, {
+      await this.productModel.updateOne({ _id: id }, {
         $push: {
           ratings: { comment, postedAt, star, postedBy: user._id }
         }
       })
-      if (!updatedRating) {
-        throw new BadRequestException(NOT_PRODUCT_BY_ID)
-      }
-      return updatedRating
     }
+    //update totalRating
+    let productUpdatedRating = await this.findOne(id)
+    const countRating = productUpdatedRating.ratings.length
+    const sumRating = productUpdatedRating.ratings.reduce(
+      (accumulator, item) => accumulator + +item.star,
+      0,
+    )
+    return await this.productModel.findOneAndUpdate({ _id: id }, {
+      totalRating: Math.round(sumRating / countRating)
+    }, { new: true })
   }
 }
