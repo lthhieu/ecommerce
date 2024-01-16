@@ -12,6 +12,7 @@ import { MailModule } from './mail/mail.module';
 import { CaslModule } from './casl/casl.module';
 import { CategoriesModule } from './categories/categories.module';
 import { BlogCategoriesModule } from './blog-categories/blog-categories.module';
+import { BlogsModule } from './blogs/blogs.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -25,7 +26,8 @@ import { BlogCategoriesModule } from './blog-categories/blog-categories.module';
   MailModule,
   CaslModule,
   CategoriesModule,
-  BlogCategoriesModule],
+  BlogCategoriesModule,
+  BlogsModule],
   controllers: [AppController],
   providers: [AppService],
 })

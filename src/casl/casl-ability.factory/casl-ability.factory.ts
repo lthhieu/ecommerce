@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { Action, IUser } from "src/configs/define.interface";
 import { Ability, AbilityBuilder, AbilityClass, ExtractSubjectType, InferSubjects } from '@casl/ability'
-import { FORBIDDEN_CREATE_BLOG_CATEGORY, FORBIDDEN_CREATE_PRODUCT, FORBIDDEN_DELETE_BLOG_CATEGORY, FORBIDDEN_DELETE_CATEGORY, FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_PRODUCT, FORBIDDEN_DELETE_USER, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE, FORBIDDEN_UPDATE_BLOG_CATEGORY, FORBIDDEN_UPDATE_CATEGORY, FORBIDDEN_UPDATE_PRODUCT } from "src/configs/response.constants";
-import { BlogCategorySubject, CategorySubject, ProductSubject, UserSubject } from "src/configs/define.class";
+import { FORBIDDEN_CREATE_BLOG, FORBIDDEN_CREATE_BLOG_CATEGORY, FORBIDDEN_CREATE_PRODUCT, FORBIDDEN_DELETE_BLOG, FORBIDDEN_DELETE_BLOG_CATEGORY, FORBIDDEN_DELETE_CATEGORY, FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_PRODUCT, FORBIDDEN_DELETE_USER, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE, FORBIDDEN_UPDATE_BLOG, FORBIDDEN_UPDATE_BLOG_CATEGORY, FORBIDDEN_UPDATE_CATEGORY, FORBIDDEN_UPDATE_PRODUCT } from "src/configs/response.constants";
+import { BlogCategorySubject, BlogSubject, CategorySubject, ProductSubject, UserSubject } from "src/configs/define.class";
 export type Subjects = InferSubjects<typeof UserSubject> |
     InferSubjects<typeof ProductSubject> | 'all';
 
@@ -39,6 +39,11 @@ export class CaslAbilityFactory {
             cannot(Action.Create, BlogCategorySubject).because(FORBIDDEN_CREATE_BLOG_CATEGORY);
             cannot(Action.Update, BlogCategorySubject).because(FORBIDDEN_UPDATE_BLOG_CATEGORY);
             cannot(Action.Delete, BlogCategorySubject).because(FORBIDDEN_DELETE_BLOG_CATEGORY);
+            //blog
+            cannot(Action.Create, BlogSubject).because(FORBIDDEN_CREATE_BLOG);
+            cannot(Action.Update, BlogSubject).because(FORBIDDEN_UPDATE_BLOG);
+            can(Action.LikeOrDislike, BlogSubject);
+            cannot(Action.Delete, BlogSubject).because(FORBIDDEN_DELETE_BLOG);
         }
 
         return build({

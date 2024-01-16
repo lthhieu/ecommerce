@@ -11,7 +11,8 @@ export enum Action {
     Read = 'read',
     Update = 'update',
     Delete = 'delete',
-    Rating = 'Rating'
+    Rating = 'Rating',
+    LikeOrDislike = 'LikeOrDisLike'
 }
 
 export interface PolicyHandler {

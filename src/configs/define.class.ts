@@ -1,3 +1,6 @@
+import mongoose from "mongoose";
+
+
 export class UserSubject {
     _id: string;
     role: string
@@ -12,5 +15,9 @@ export class CategorySubject {
 }
 
 export class BlogCategorySubject {
+    _id: string;
+}
+
+export class BlogSubject {
     _id: string;
 }
