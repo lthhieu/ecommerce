@@ -98,24 +98,16 @@ export class ProductsService {
     if (product && JSON.stringify(product._id) !== JSON.stringify(id)) {
       throw new BadRequestException(FOUND_SLUG)
     }
-    const productUpd = await this.productModel.updateOne({ _id: id }, {
+    return await this.productModel.updateOne({ _id: id }, {
       ...updateProductDto, slug
     })
-    if (!productUpd) {
-      throw new BadRequestException(NOT_PRODUCT_BY_ID)
-    }
-    return productUpd
   }
 
   async remove(id: string) {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-    const productDel = await this.productModel.deleteOne({ _id: id })
-    if (!productDel) {
-      throw new BadRequestException(NOT_PRODUCT_BY_ID)
-    }
-    return productDel
+    return await this.productModel.deleteOne({ _id: id })
   }
 
   upsertRatings = async (id: string, user: IUser, updateProductRatingDto: UpdateProductRatingDto) => {

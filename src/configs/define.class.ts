@@ -6,3 +6,11 @@ export class UserSubject {
 export class ProductSubject {
     _id: string;
 }
+
+export class CategorySubject {
+    _id: string;
+}
+
+export class BlogCategorySubject {
+    _id: string;
+}

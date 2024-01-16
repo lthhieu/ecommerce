@@ -11,6 +11,7 @@ import { AuthModule } from './auth/auth.module';
 import { MailModule } from './mail/mail.module';
 import { CaslModule } from './casl/casl.module';
 import { CategoriesModule } from './categories/categories.module';
+import { BlogCategoriesModule } from './blog-categories/blog-categories.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -23,7 +24,8 @@ import { CategoriesModule } from './categories/categories.module';
   AuthModule,
   MailModule,
   CaslModule,
-  CategoriesModule],
+  CategoriesModule,
+  BlogCategoriesModule],
   controllers: [AppController],
   providers: [AppService],
 })

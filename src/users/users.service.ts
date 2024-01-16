@@ -62,22 +62,14 @@ export class UsersService {
     if (user && JSON.stringify(user._id) !== JSON.stringify(id)) {
       throw new BadRequestException(FOUND_EMAIL)
     }
-    const userUpd = await this.userModel.updateOne({ _id: id }, updateUserDto)
-    if (!userUpd) {
-      throw new BadRequestException(NOT_USER_BY_ID)
-    }
-    return userUpd
+    return await this.userModel.updateOne({ _id: id }, updateUserDto)
   }
 
   async remove(id: string) {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-    const userDel = await this.userModel.deleteOne({ _id: id })
-    if (!userDel) {
-      throw new BadRequestException(NOT_USER_BY_ID)
-    }
-    return userDel
+    return await this.userModel.deleteOne({ _id: id })
   }
   updateRefreshToken = async (refreshToken: string, id: string) => {
     if (!mongoose.Types.ObjectId.isValid(id)) {

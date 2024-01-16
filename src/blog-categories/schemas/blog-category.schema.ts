@@ -1,14 +1,14 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-export type CategoryDocument = HydratedDocument<Category>;
+export type BlogCategoryDocument = HydratedDocument<BlogCategory>;
 
 @Schema({ timestamps: true })
-export class Category {
+export class BlogCategory {
     @Prop({ required: true, unique: true })
     title: string;
     @Prop()
     slug: string;
 }
 
-export const CategorySchema = SchemaFactory.createForClass(Category);
+export const BlogCategorySchema = SchemaFactory.createForClass(BlogCategory);
