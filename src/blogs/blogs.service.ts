@@ -125,25 +125,12 @@ export class BlogsService {
       _id: id,
       likes: { $in: [user._id] }
     })
-    if (!isLike) {
-      //like
-      await this.blogModel.updateOne({ _id: id }, {
-        $push: { likes: user._id }
-      })
-      //remove id in dislike
-      await this.blogModel.updateOne({ _id: id }, {
-        $pull: { dislikes: { $in: [user._id] } }
-      })
-    } else {
-      //dislike
-      await this.blogModel.updateOne({ _id: id }, {
-        $push: { dislikes: user._id }
-      })
-      //remove id in like
-      await this.blogModel.updateOne({ _id: id }, {
-        $pull: { likes: { $in: [user._id] } }
-      })
-    }
+    const pushField = isLike ? 'dislikes' : 'likes'
+    const pullField = isLike ? 'likes' : 'dislikes'
+    await this.blogModel.updateOne({ _id: id }, {
+      $push: { [pushField]: user._id },
+      $pull: { [pullField]: { $in: [user._id] } }
+    })
     return "ok"
   }
 }
