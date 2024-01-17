@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query, Req } from '@nestjs/common';
 import { BlogsService } from './blogs.service';
 import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
@@ -35,8 +35,9 @@ export class BlogsController {
   @Patch('like-or-dislike/:id')
   @CheckPolicies({ action: Action.LikeOrDislike, subject: BlogSubject })
   @ResponseMessage(BLOG_UPDATED_LIKE_OR_DISLIKE)
-  likeOrDislike(@Param('id') id: string, @User() user: IUser) {
-    return this.blogsService.likeOrDislike(id, user);
+  likeOrDislike(@Param('id') id: string, @User() user: IUser, @Req() req: Request) {
+    const isLike = req.headers['handlelike'] === 'true' ? true : false
+    return this.blogsService.likeOrDislike(id, user, isLike);
   }
 
   @Patch(':id')

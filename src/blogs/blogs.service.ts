@@ -116,21 +116,29 @@ export class BlogsService {
     return await this.blogModel.deleteOne({ _id: id })
   }
 
-  likeOrDislike = async (id: string, user: IUser) => {
+  likeOrDislike = async (id: string, user: IUser, isLike: Boolean) => {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-    //check like
-    const isLike = await this.blogModel.findOne({
+
+    const checkField = isLike ? 'likes' : 'dislikes'
+    const pullField = isLike ? 'dislikes' : 'likes'
+    const pushField = isLike ? 'likes' : 'dislikes'
+
+    const check = await this.blogModel.findOne({
       _id: id,
-      likes: { $in: [user._id] }
+      [checkField]: { $in: [user._id] }
     })
-    const pushField = isLike ? 'dislikes' : 'likes'
-    const pullField = isLike ? 'likes' : 'dislikes'
-    await this.blogModel.updateOne({ _id: id }, {
-      $push: { [pushField]: user._id },
-      $pull: { [pullField]: { $in: [user._id] } }
-    })
+    if (check) {
+      await this.blogModel.updateOne({ _id: id }, {
+        $pull: { [checkField]: { $in: [user._id] } }
+      })
+    } else {
+      await this.blogModel.updateOne({ _id: id }, {
+        $push: { [pushField]: user._id },
+        $pull: { [pullField]: { $in: [user._id] } }
+      })
+    }
     return "ok"
   }
 }
