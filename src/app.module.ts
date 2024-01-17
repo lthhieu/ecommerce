@@ -13,6 +13,8 @@ import { CaslModule } from './casl/casl.module';
 import { CategoriesModule } from './categories/categories.module';
 import { BlogCategoriesModule } from './blog-categories/blog-categories.module';
 import { BlogsModule } from './blogs/blogs.module';
+import { BrandsModule } from './brands/brands.module';
+import { CouponsModule } from './coupons/coupons.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -27,7 +29,9 @@ import { BlogsModule } from './blogs/blogs.module';
   CaslModule,
   CategoriesModule,
   BlogCategoriesModule,
-  BlogsModule],
+  BlogsModule,
+  BrandsModule,
+  CouponsModule],
   controllers: [AppController],
   providers: [AppService],
 })
