@@ -82,7 +82,12 @@ export class BlogsService {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-    const blog = await this.blogModel.findOne({ _id: id })
+    const blog = await this.blogModel.findOneAndUpdate({ _id: id }, {
+      $inc: { views: 1 }
+    }, { new: true }).populate([
+      { path: 'likes', select: { firstName: 1, lastName: 1, email: 1 } },
+      { path: 'dislikes', select: { firstName: 1, lastName: 1, email: 1 } }
+    ])
     if (!blog) {
       throw new BadRequestException(NOT_BLOG_BY_ID)
     }
