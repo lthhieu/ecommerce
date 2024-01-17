@@ -21,3 +21,11 @@ export class BlogCategorySubject {
 export class BlogSubject {
     _id: string;
 }
+
+export class BrandSubject {
+    _id: string;
+}
+
+export class CouponSubject {
+    _id: string;
+}

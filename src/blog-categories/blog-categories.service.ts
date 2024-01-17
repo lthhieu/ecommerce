@@ -6,7 +6,6 @@ import { BlogCategory } from './schemas/blog-category.schema';
 import mongoose, { Model } from 'mongoose';
 import slugify from 'slugify';
 import { FOUND_BLOG_CATEGORY_TITLE, INVALID_ID, NOT_BLOG_CATEGORY_BY_ID } from 'src/configs/response.constants';
-import { IsMongoId } from 'class-validator';
 
 @Injectable()
 export class BlogCategoriesService {

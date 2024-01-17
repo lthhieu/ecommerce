@@ -1,26 +1,67 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateCouponDto } from './dto/create-coupon.dto';
 import { UpdateCouponDto } from './dto/update-coupon.dto';
+import { InjectModel } from '@nestjs/mongoose';
+import { Coupon } from './schemas/coupon.schema';
+import mongoose, { Model } from 'mongoose';
+import { FOUND_COUPON_TITLE, INVALID_ID, NOT_COUPON_BY_ID } from 'src/configs/response.constants';
 
 @Injectable()
 export class CouponsService {
-  create(createCouponDto: CreateCouponDto) {
-    return 'This action adds a new coupon';
+  constructor(@InjectModel(Coupon.name) private couponModel: Model<Coupon>) { }
+
+  async findOneByName(name: string) {
+    return await this.couponModel.findOne({ name })
+  }
+  async create(createCouponDto: CreateCouponDto) {
+    //check title exist
+    let check = await this.findOneByName(createCouponDto.name)
+    if (check) {
+      throw new BadRequestException(FOUND_COUPON_TITLE)
+    }
+    //create
+    let createNewCoupon = await this.couponModel.create({
+      ...createCouponDto
+    })
+    return {
+      _id: createNewCoupon._id
+    }
   }
 
-  findAll() {
-    return `This action returns all coupons`;
+  async findAll() {
+    return await this.couponModel.find()
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} coupon`;
+  async findOne(id: string) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const coupon = await this.couponModel.findOne({ _id: id })
+    if (!coupon) {
+      throw new BadRequestException(NOT_COUPON_BY_ID)
+    }
+    return coupon
   }
 
-  update(id: number, updateCouponDto: UpdateCouponDto) {
-    return `This action updates a #${id} coupon`;
+  async update(id: string, updateCouponDto: UpdateCouponDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const { name } = updateCouponDto
+    const coupon = await this.findOneByName(name)
+    //check unique title
+    if (coupon && JSON.stringify(coupon._id) !== JSON.stringify(id)) {
+      throw new BadRequestException(FOUND_COUPON_TITLE)
+    }
+    return await this.couponModel.updateOne({ _id: id }, {
+      ...updateCouponDto
+    })
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} coupon`;
+  async remove(id: string) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    return await this.couponModel.deleteOne({ _id: id })
   }
 }
