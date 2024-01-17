@@ -4,7 +4,7 @@ import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
 import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
 import { BLOG_CREATED, BLOG_DELETED, BLOG_FETCH_ALL, BLOG_FETCH_BY_ID, BLOG_UPDATED, BLOG_UPDATED_LIKE_OR_DISLIKE } from 'src/configs/response.constants';
-import { Action } from 'src/configs/define.interface';
+import { Action, IUser } from 'src/configs/define.interface';
 import { BlogSubject } from 'src/configs/define.class';
 
 @Controller('blogs')
@@ -35,8 +35,8 @@ export class BlogsController {
   @Patch('like-or-dislike/:id')
   @CheckPolicies({ action: Action.LikeOrDislike, subject: BlogSubject })
   @ResponseMessage(BLOG_UPDATED_LIKE_OR_DISLIKE)
-  likeOrDislike(@Param('id') id: string, @Body() updateBlogDto: UpdateBlogDto) {
-    return this.blogsService.update(id, updateBlogDto);
+  likeOrDislike(@Param('id') id: string, @User() user: IUser) {
+    return this.blogsService.likeOrDislike(id, user);
   }
 
   @Patch(':id')

@@ -9,6 +9,7 @@ import { FOUND_SLUG, INVALID_ID, NOT_BLOG_BY_ID } from 'src/configs/response.con
 import { BlogCategoriesService } from 'src/blog-categories/blog-categories.service';
 import aqp from 'api-query-params';
 import { IsEmpty } from 'class-validator';
+import { IUser } from 'src/configs/define.interface';
 
 @Injectable()
 export class BlogsService {
@@ -113,5 +114,36 @@ export class BlogsService {
       throw new BadRequestException(INVALID_ID)
     }
     return await this.blogModel.deleteOne({ _id: id })
+  }
+
+  likeOrDislike = async (id: string, user: IUser) => {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    //check like
+    const isLike = await this.blogModel.findOne({
+      _id: id,
+      likes: { $in: [user._id] }
+    })
+    if (!isLike) {
+      //like
+      await this.blogModel.updateOne({ _id: id }, {
+        $push: { likes: user._id }
+      })
+      //remove id in dislike
+      await this.blogModel.updateOne({ _id: id }, {
+        $pull: { dislikes: { $in: [user._id] } }
+      })
+    } else {
+      //dislike
+      await this.blogModel.updateOne({ _id: id }, {
+        $push: { dislikes: user._id }
+      })
+      //remove id in like
+      await this.blogModel.updateOne({ _id: id }, {
+        $pull: { likes: { $in: [user._id] } }
+      })
+    }
+    return "ok"
   }
 }
