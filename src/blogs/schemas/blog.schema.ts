@@ -3,7 +3,7 @@ import mongoose, { HydratedDocument } from 'mongoose';
 import { BlogCategory } from 'src/blog-categories/schemas/blog-category.schema';
 import { User } from 'src/users/schemas/user.schema';
 
-export type ProductDocument = HydratedDocument<Blog>;
+export type BlogDocument = HydratedDocument<Blog>;
 
 @Schema({ timestamps: true })
 export class Blog {
@@ -38,4 +38,4 @@ export class Blog {
     totalRating: Number;
 }
 
-export const ProductSchema = SchemaFactory.createForClass(Blog);
+export const BlogSchema = SchemaFactory.createForClass(Blog);

@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query } from '@nestjs/common';
 import { BlogsService } from './blogs.service';
 import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
@@ -21,8 +21,8 @@ export class BlogsController {
   @Get()
   @Public()
   @ResponseMessage(BLOG_FETCH_ALL)
-  findAll() {
-    return this.blogsService.findAll();
+  findAll(@Query('current') current: string, @Query('pageSize') pageSize: string, @Query() qs: string) {
+    return this.blogsService.findAll(+current, +pageSize, qs);
   }
 
   @Get(':id')

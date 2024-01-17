@@ -8,5 +8,6 @@ import { BlogCategory, BlogCategorySchema } from './schemas/blog-category.schema
   imports: [MongooseModule.forFeature([{ name: BlogCategory.name, schema: BlogCategorySchema }])],
   controllers: [BlogCategoriesController],
   providers: [BlogCategoriesService],
+  exports: [BlogCategoriesService]
 })
 export class BlogCategoriesModule { }

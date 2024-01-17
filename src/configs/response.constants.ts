@@ -63,3 +63,5 @@ export const FORBIDDEN_DELETE_BLOG = 'You Don\'t Have Permission To Delete Blog'
 export const FORBIDDEN_UPDATE_BLOG = 'You Don\'t Have Permission To Update Blog'
 export const FORBIDDEN_CREATE_BLOG = 'You Don\'t Have Permission To Create Blog'
 export const BLOG_UPDATED_LIKE_OR_DISLIKE = 'Blog Updated Like Or Dislike'
+export const NOT_BLOG_BY_ID = 'Cannot Found Blog With Your Id You Given'
+
