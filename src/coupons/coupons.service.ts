@@ -5,6 +5,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Coupon } from './schemas/coupon.schema';
 import mongoose, { Model } from 'mongoose';
 import { FOUND_COUPON_TITLE, INVALID_ID, NOT_COUPON_BY_ID } from 'src/configs/response.constants';
+import ms from 'ms';
 
 @Injectable()
 export class CouponsService {
@@ -21,7 +22,7 @@ export class CouponsService {
     }
     //create
     let createNewCoupon = await this.couponModel.create({
-      ...createCouponDto
+      ...createCouponDto, expire: Date.now() + +createCouponDto.expire * ms('1d')
     })
     return {
       _id: createNewCoupon._id
@@ -54,7 +55,7 @@ export class CouponsService {
       throw new BadRequestException(FOUND_COUPON_TITLE)
     }
     return await this.couponModel.updateOne({ _id: id }, {
-      ...updateCouponDto
+      ...updateCouponDto, expire: Date.now() + +updateCouponDto.expire * ms('1d')
     })
   }
 

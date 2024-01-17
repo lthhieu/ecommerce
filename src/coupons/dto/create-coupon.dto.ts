@@ -1,5 +1,4 @@
-import { Transform } from "class-transformer";
-import { IsDate, IsNotEmpty, IsNumber } from "class-validator";
+import { IsNotEmpty, IsNumber } from "class-validator";
 
 export class CreateCouponDto {
     @IsNotEmpty()
@@ -8,7 +7,6 @@ export class CreateCouponDto {
     @IsNumber()
     discount: number;
     @IsNotEmpty()
-    @Transform(({ value }) => new Date(value))
-    @IsDate()
-    expire: Date
+    @IsNumber()
+    expire: number
 }
