@@ -15,6 +15,7 @@ import { BlogCategoriesModule } from './blog-categories/blog-categories.module';
 import { BlogsModule } from './blogs/blogs.module';
 import { BrandsModule } from './brands/brands.module';
 import { CouponsModule } from './coupons/coupons.module';
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -31,7 +32,8 @@ import { CouponsModule } from './coupons/coupons.module';
   BlogCategoriesModule,
   BlogsModule,
   BrandsModule,
-  CouponsModule],
+  CouponsModule,
+  OrdersModule],
   controllers: [AppController],
   providers: [AppService],
 })

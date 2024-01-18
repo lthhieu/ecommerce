@@ -54,8 +54,9 @@ export class CouponsService {
     if (coupon && JSON.stringify(coupon._id) !== JSON.stringify(id)) {
       throw new BadRequestException(FOUND_COUPON_TITLE)
     }
+    if (updateCouponDto?.expire) updateCouponDto.expire = Date.now() + +updateCouponDto.expire * ms('1d')
     return await this.couponModel.updateOne({ _id: id }, {
-      ...updateCouponDto, expire: Date.now() + +updateCouponDto.expire * ms('1d')
+      ...updateCouponDto
     })
   }
 

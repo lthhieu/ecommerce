@@ -121,7 +121,7 @@ export class BlogsService {
     return await this.blogModel.deleteOne({ _id: id })
   }
 
-  likeOrDislike = async (id: string, user: IUser, isLike: Boolean) => {
+  likeOrDislike = async (id: string, user: IUser, isLike: boolean) => {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }

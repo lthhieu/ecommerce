@@ -1,7 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
 import { Category } from 'src/categories/schemas/category.schema';
-import { User } from 'src/users/schemas/user.schema';
 
 export type ProductDocument = HydratedDocument<Product>;
 
@@ -34,14 +33,14 @@ export class Product {
     @Prop({ type: mongoose.Schema.Types.Array })
     images: string[]
 
-    @Prop({ enum: ['black', 'silver', 'gray'] })
+    @Prop({ enum: ['gold', 'silver', 'gray'] })
     color: string;
 
     @Prop({ type: mongoose.Schema.Types.Array })
     ratings: {
         star: Number,
         comment: string,
-        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: User },
+        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
         postedAt: Date
     }[]
 
