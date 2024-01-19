@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
-import { UpdateProductDto, UpdateProductRatingDto } from './dto/update-product.dto';
+import { UpdateProductDto, UpdateProductImageDto, UpdateProductRatingDto } from './dto/update-product.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Product } from './schemas/product.schema';
 import mongoose, { Model } from 'mongoose';
@@ -142,5 +142,13 @@ export class ProductsService {
     return await this.productModel.findOneAndUpdate({ _id: id }, {
       totalRating: Math.round(sumRating / countRating)
     }, { new: true })
+  }
+  async updateImages(id: string, updateProductImageDto: UpdateProductImageDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    return await this.productModel.updateOne({ _id: id },
+      { $push: { images: { $each: updateProductImageDto.images } } }
+    )
   }
 }
