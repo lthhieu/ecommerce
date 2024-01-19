@@ -12,7 +12,8 @@ export enum Action {
     Update = 'update',
     Delete = 'delete',
     Rating = 'Rating',
-    LikeOrDislike = 'LikeOrDisLike'
+    LikeOrDislike = 'LikeOrDisLike',
+    Upload = 'Upload'
 }
 
 export interface PolicyHandler {

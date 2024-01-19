@@ -29,3 +29,7 @@ export class BrandSubject {
 export class CouponSubject {
     _id: string;
 }
+
+export class UploadSubject {
+    _id: string;
+}

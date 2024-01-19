@@ -1,17 +1,46 @@
-import { Controller, HttpStatus, ParseFilePipeBuilder, Post, Req, UploadedFile, UseInterceptors } from '@nestjs/common';
+import { Controller, HttpStatus, ParseFilePipeBuilder, Post, Req, UploadedFile, UploadedFiles, UseInterceptors } from '@nestjs/common';
 import { CloudinaryService } from './cloudinary.service';
-import { Public } from 'src/configs/custom.decorator';
-import { FileInterceptor } from '@nestjs/platform-express';
+import { FileInterceptor, FilesInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
+import { UPLOAD_FILES } from 'src/configs/response.constants';
+import { CheckPolicies, ResponseMessage } from 'src/configs/custom.decorator';
+import { Action } from 'src/configs/define.interface';
+import { UploadSubject } from 'src/configs/define.class';
 
 @Controller('cloudinary')
 export class CloudinaryController {
     constructor(private readonly cloudinaryService: CloudinaryService) { }
 
-    @Post('upload')
-    @Public()
+    @Post('upload-images')
+    @CheckPolicies({ action: Action.Upload, subject: UploadSubject })
+    @ResponseMessage(UPLOAD_FILES)
+    @UseInterceptors(FilesInterceptor('files', 5))
+    async uploadImages(@UploadedFiles(
+        new ParseFilePipeBuilder()
+            .addFileTypeValidator({
+                fileType: /^image\/(gif|png|jpeg|tiff|webp)$/i
+            })
+            .addMaxSizeValidator({
+                maxSize: 1024 * 10
+            })
+            .build({
+                errorHttpStatusCode: HttpStatus.UNPROCESSABLE_ENTITY
+            }),
+    ) files: Array<Express.Multer.File>, @Req() req: Request) {
+        const folder = req.headers['folder']
+        return {
+            images: await Promise.all(files.map(async (file) => {
+                const fileResponse = await this.cloudinaryService.uploadFile(file, folder);
+                return fileResponse.secure_url;
+            }))
+        }
+    }
+
+    @Post('upload-image')
+    @CheckPolicies({ action: Action.Upload, subject: UploadSubject })
+    @ResponseMessage(UPLOAD_FILES)
     @UseInterceptors(FileInterceptor('file'))
-    uploadImage(@UploadedFile(
+    async uploadImage(@UploadedFile(
         new ParseFilePipeBuilder()
             .addFileTypeValidator({
                 // /^text\/plain$|^image\/(gif|png|jpeg|tiff|webp)$/i
@@ -30,8 +59,10 @@ export class CloudinaryController {
                 // },
             }),
     ) file: Express.Multer.File, @Req() req: Request) {
-        // return file
         const folder = req.headers['folder']
-        return this.cloudinaryService.uploadFile(file, folder);
+        const response = await this.cloudinaryService.uploadFile(file, folder)
+        return {
+            image: response.secure_url
+        }
     }
 }
