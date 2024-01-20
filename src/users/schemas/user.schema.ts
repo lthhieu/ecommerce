@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
-import { Address } from 'src/addresses/schemas/address.schema';
 import { Product } from 'src/products/schemas/product.schema';
 
 export type UserDocument = HydratedDocument<User>;
@@ -28,8 +27,8 @@ export class User {
     @Prop({ type: mongoose.Schema.Types.Array })
     cart: mongoose.Schema.Types.ObjectId[];
 
-    @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: Address.name })
-    address: Address[];
+    @Prop({ type: mongoose.Schema.Types.Array })
+    address: [];
 
     @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: Product.name })
     wishlist: Product[];

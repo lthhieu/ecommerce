@@ -5,7 +5,6 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MongooseConfigService } from './configs/mongoose.config';
 import { UsersModule } from './users/users.module';
-import { AddressesModule } from './addresses/addresses.module';
 import { ProductsModule } from './products/products.module';
 import { AuthModule } from './auth/auth.module';
 import { MailModule } from './mail/mail.module';
@@ -23,19 +22,18 @@ import { CloudinaryModule } from './cloudinary/cloudinary.module';
   MongooseModule.forRootAsync({
     useClass: MongooseConfigService,
   }),
-  UsersModule,
-  AddressesModule,
-  ProductsModule,
-  AuthModule,
-  MailModule,
-  CaslModule,
-  CategoriesModule,
-  BlogCategoriesModule,
-  BlogsModule,
-  BrandsModule,
-  CouponsModule,
-  OrdersModule,
-  CloudinaryModule],
+    UsersModule,
+    ProductsModule,
+    AuthModule,
+    MailModule,
+    CaslModule,
+    CategoriesModule,
+    BlogCategoriesModule,
+    BlogsModule,
+    BrandsModule,
+    CouponsModule,
+    OrdersModule,
+    CloudinaryModule],
   controllers: [AppController],
   providers: [AppService],
 })
