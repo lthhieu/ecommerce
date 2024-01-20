@@ -30,5 +30,5 @@ export class UpdateProductImageDto {
     @ArrayMinSize(1)
     @ValidateNested()
     @Type(() => ImagesDto)
-    images: ImagesDto[];
+    images: ImagesDto;
 }

@@ -27,8 +27,14 @@ export class User {
     @Prop({ type: mongoose.Schema.Types.Array })
     cart: mongoose.Schema.Types.ObjectId[];
 
-    @Prop({ type: mongoose.Schema.Types.Array })
-    address: [];
+    @Prop({ type: Object })
+    address: {
+        noHome: string,
+        street: string,
+        ward: string,
+        district: string,
+        city: string
+    };
 
     @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: Product.name })
     wishlist: Product[];
