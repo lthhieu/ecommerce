@@ -28,8 +28,11 @@ export class Blog {
     @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: User.name })
     dislikes: User[];
 
-    @Prop()
-    image: string
+    @Prop({ type: Object })
+    image: {
+        public_id: string,
+        secure_url: string
+    }
 
     @Prop({ default: 'Admin' })
     author: string

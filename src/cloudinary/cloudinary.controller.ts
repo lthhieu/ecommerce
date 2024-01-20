@@ -31,7 +31,10 @@ export class CloudinaryController {
         return {
             images: await Promise.all(files.map(async (file) => {
                 const fileResponse = await this.cloudinaryService.uploadFile(file, folder);
-                return fileResponse.secure_url;
+                return {
+                    public_id: fileResponse.public_id,
+                    secure_url: fileResponse.secure_url
+                };
             }))
         }
     }
@@ -62,7 +65,10 @@ export class CloudinaryController {
         const folder = req.headers['folder']
         const response = await this.cloudinaryService.uploadFile(file, folder)
         return {
-            image: response.secure_url
+            image: {
+                public_id: response.public_id,
+                secure_url: response.secure_url
+            }
         }
     }
 }

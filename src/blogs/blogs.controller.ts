@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, ForbiddenException, Query, Req } from '@nestjs/common';
 import { BlogsService } from './blogs.service';
 import { CreateBlogDto } from './dto/create-blog.dto';
-import { UpdateBlogDto } from './dto/update-blog.dto';
+import { UpdateBlogDto, UpdateBlogImageDto } from './dto/update-blog.dto';
 import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { BLOG_CREATED, BLOG_DELETED, BLOG_FETCH_ALL, BLOG_FETCH_BY_ID, BLOG_UPDATED, BLOG_UPDATED_LIKE_OR_DISLIKE } from 'src/configs/response.constants';
+import { BLOG_CREATED, BLOG_DELETED, BLOG_FETCH_ALL, BLOG_FETCH_BY_ID, BLOG_UPDATED, BLOG_UPDATED_LIKE_OR_DISLIKE, BLOG_UPDATE_IMAGE } from 'src/configs/response.constants';
 import { Action, IUser } from 'src/configs/define.interface';
 import { BlogSubject } from 'src/configs/define.class';
 
@@ -30,6 +30,13 @@ export class BlogsController {
   @ResponseMessage(BLOG_FETCH_BY_ID)
   findOne(@Param('id') id: string) {
     return this.blogsService.findOne(id);
+  }
+
+  @ResponseMessage(BLOG_UPDATE_IMAGE)
+  @Patch('image/:id')
+  @CheckPolicies({ action: Action.Update, subject: BlogSubject })
+  updateImages(@Param('id') id: string, @Body() updateBlogImageDto: UpdateBlogImageDto) {
+    return this.blogsService.updateImage(id, updateBlogImageDto);
   }
 
   @Patch('like-or-dislike/:id')

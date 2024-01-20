@@ -31,7 +31,10 @@ export class Product {
     sold: Number;
 
     @Prop({ type: mongoose.Schema.Types.Array })
-    images: string[]
+    images: {
+        public_id: string,
+        secure_url: string
+    }[]
 
     @Prop({ enum: ['gold', 'silver', 'gray'] })
     color: string;

@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateBlogDto } from './dto/create-blog.dto';
-import { UpdateBlogDto } from './dto/update-blog.dto';
+import { UpdateBlogDto, UpdateBlogImageDto } from './dto/update-blog.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Blog } from './schemas/blog.schema';
 import mongoose, { Model } from 'mongoose';
@@ -145,5 +145,15 @@ export class BlogsService {
       })
     }
     return "ok"
+  }
+  async updateImage(id: string, updateBlogImageDto: UpdateBlogImageDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    return await this.blogModel.updateOne({ _id: id },
+      {
+        image: updateBlogImageDto.image
+      }
+    )
   }
 }
