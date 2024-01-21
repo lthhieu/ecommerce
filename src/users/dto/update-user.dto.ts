@@ -1,7 +1,8 @@
 import { OmitType } from '@nestjs/mapped-types';
 import { CreateUserDto } from './create-user.dto';
-import { IsBoolean, IsNotEmpty, IsObject, IsString, ValidateNested } from 'class-validator';
+import { ArrayMinSize, IsArray, IsBoolean, IsMongoId, IsNotEmpty, IsNotEmptyObject, IsNumber, IsObject, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
+import mongoose from 'mongoose';
 
 export class AddressDto {
     @IsNotEmpty()
@@ -32,4 +33,24 @@ export class UpdateUserDto extends OmitType(CreateUserDto, ['password'] as const
 export class ResetPasswordUserDto {
     @IsNotEmpty()
     password: string;
+}
+
+export class CartDto {
+    @IsNotEmpty()
+    @IsMongoId()
+    product: mongoose.Schema.Types.ObjectId;
+    @IsNotEmpty()
+    @IsNumber()
+    quantity: number;
+    @IsNotEmpty()
+    @IsString()
+    color: string
+}
+export class UpdateCartDto {
+    @IsNotEmpty()
+    @IsObject()
+    @IsNotEmptyObject()
+    @ValidateNested()
+    @Type(() => CartDto)
+    cart: CartDto
 }

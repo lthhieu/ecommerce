@@ -88,3 +88,4 @@ export const FORBIDDEN_UPLOAD_FILE = 'You Don\'t Have Permission To Upload File(
 export const UPLOAD_FILES = 'Upload File(s) Successfully'
 export const PRODUCT_UPDATE_IMAGES = 'Product Updated Images'
 export const BLOG_UPDATE_IMAGE = 'Blog Updated Image'
+export const USER_UPDATED_CART = 'User Updated Cart'

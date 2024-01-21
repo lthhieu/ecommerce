@@ -25,7 +25,11 @@ export class User {
     role: string;
 
     @Prop({ type: mongoose.Schema.Types.Array })
-    cart: mongoose.Schema.Types.ObjectId[];
+    cart: {
+        product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },
+        quantity: number,
+        color: string
+    }[];
 
     @Prop({ type: Object })
     address: {

@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters, ForbiddenException } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { ResetPasswordUserDto, UpdateUserDto } from './dto/update-user.dto';
+import { ResetPasswordUserDto, UpdateCartDto, UpdateUserDto } from './dto/update-user.dto';
 import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { RESET_PASSWORD, USER_CREATED, USER_FETCH_ALL, USER_FETCH_BY_ID } from 'src/configs/response.constants';
+import { RESET_PASSWORD, USER_CREATED, USER_DELETED, USER_FETCH_ALL, USER_FETCH_BY_ID, USER_UPDATED, USER_UPDATED_CART } from 'src/configs/response.constants';
 import { Action, IUser } from 'src/configs/define.interface';
 import { UserSubject } from 'src/configs/define.class';
 import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
@@ -50,7 +50,24 @@ export class UsersController {
     return this.usersService.resetPassword(token, resetPasswordUserDto.password);
   }
 
+  @Patch('cart/:id')
+  @ResponseMessage(USER_UPDATED_CART)
+  updateCart(@Param('id') id: string, @Body() updateCartDto: UpdateCartDto, @User() user: IUser) {
+    const ability = this.caslAbilityFactory.createForUser(user)
+    try {
+      const userToUpd = new UserSubject()
+      userToUpd._id = id
+      ForbiddenError.from(ability).throwUnlessCan(Action.Update, userToUpd)
+      return this.usersService.updateCart(id, updateCartDto);
+    } catch (e) {
+      if (e instanceof ForbiddenError) {
+        throw new ForbiddenException(e.message)
+      }
+    }
+  }
+
   @Patch(':id')
+  @ResponseMessage(USER_UPDATED)
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto, @User() user: IUser) {
     const ability = this.caslAbilityFactory.createForUser(user)
     try {
@@ -66,6 +83,7 @@ export class UsersController {
   }
 
   @Delete(':id')
+  @ResponseMessage(USER_DELETED)
   remove(@Param('id') id: string, @User() user: IUser) {
     const ability = this.caslAbilityFactory.createForUser(user)
     try {

@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
+import { UpdateCartDto, UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
@@ -102,5 +102,27 @@ export class UsersService {
     return await this.userModel.findByIdAndUpdate(checkToken._id, {
       password: this.hashPassword(password), passwordResetToken: null, passwordResetExpire: null, passwordChangeAt: Date.now()
     }).select('_id')
+  }
+
+  async updateCart(id: string, updateCartDto: UpdateCartDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const { cart } = updateCartDto
+    const { cart: oldCart, ...user } = await this.findOne(id)
+    //kiểm tra id của product có trong cart hay chưa ?
+    const checkColor = oldCart.find(item => JSON.stringify(item.product) === JSON.stringify(cart.product)
+      && item.color === cart.color)
+    if (checkColor) {
+      //cập nhật số lượng
+      return await this.userModel.updateOne({ _id: id, cart: { $elemMatch: checkColor } }, {
+        $set: { "cart.$.quantity": cart.quantity }
+      })
+    } else {
+      //thêm sản phẩm mới
+      return await this.userModel.updateOne({ _id: id }, {
+        $push: { cart }
+      })
+    }
   }
 }
