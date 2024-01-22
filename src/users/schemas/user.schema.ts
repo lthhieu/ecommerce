@@ -3,7 +3,16 @@ import mongoose, { HydratedDocument } from 'mongoose';
 import { Product } from 'src/products/schemas/product.schema';
 
 export type UserDocument = HydratedDocument<User>;
-
+@Schema({ _id: false })
+export class Cart {
+    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: Product.name })
+    product: Product;
+    @Prop()
+    quantity: number;
+    @Prop()
+    color: string
+}
+export const CartSchema = SchemaFactory.createForClass(Cart);
 @Schema({ timestamps: true })
 export class User {
     @Prop()
@@ -24,12 +33,8 @@ export class User {
     @Prop({ default: 'USER' })
     role: string;
 
-    @Prop({ type: mongoose.Schema.Types.Array })
-    cart: {
-        product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },
-        quantity: number,
-        color: string
-    }[];
+    @Prop({ type: [CartSchema] })
+    cart: Cart[];
 
     @Prop({ type: Object })
     address: {

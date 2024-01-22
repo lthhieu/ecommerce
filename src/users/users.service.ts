@@ -46,6 +46,7 @@ export class UsersService {
       throw new BadRequestException(INVALID_ID)
     }
     const user = await this.userModel.findOne({ _id: id }).select('-password -refreshToken')
+      .populate('cart.product', 'title price')
     if (!user) {
       throw new BadRequestException(NOT_USER_BY_ID)
     }
