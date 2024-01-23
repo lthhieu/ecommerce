@@ -7,6 +7,8 @@ import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
 import { FOUND_EMAIL, INVALID_ID, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { IsEmpty } from 'class-validator';
+import aqp from 'api-query-params';
 
 @Injectable()
 export class UsersService {
@@ -37,8 +39,41 @@ export class UsersService {
     }
   }
 
-  async findAll() {
-    return await this.userModel.find().select('-password -refreshToken')
+  async findAll(page: number, limit: number, qs: string) {
+    let { filter, projection, population } = aqp(qs);
+    let { sort }: { sort: any } = aqp(qs);
+
+    delete filter.current
+    delete filter.pageSize
+
+    page = page ? page : 1
+    limit = limit ? limit : 10
+    let skip = (page - 1) * limit
+
+    const totalItems = (await this.userModel.find(filter)).length
+    const totalPages = Math.ceil(totalItems / limit)
+
+    if (IsEmpty(sort as any)) {
+      sort = '-updatedAt'
+    }
+
+    let users = await this.userModel.find(filter).select('-password -refreshToken')
+      .skip(skip)
+      .limit(limit)
+      .sort(sort)
+      .select(projection)
+      .populate(population)
+      .exec();
+
+    return {
+      meta: {
+        current: page,
+        pageSize: limit,
+        pages: totalPages,
+        total: totalItems
+      },
+      result: users
+    }
   }
 
   async findOne(id: string) {

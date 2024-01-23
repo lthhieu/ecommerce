@@ -9,6 +9,8 @@ import { UsersService } from 'src/users/users.service';
 import { COUPON_EXPIRED, INVALID_ID, NOT_ORDER_BY_ID } from 'src/configs/response.constants';
 import { CouponsService } from 'src/coupons/coupons.service';
 import dayjs from 'dayjs'
+import aqp from 'api-query-params';
+import { IsEmpty } from 'class-validator';
 
 @Injectable()
 export class OrdersService {
@@ -49,23 +51,75 @@ export class OrdersService {
     }
   }
 
-  findAll() {
-    return `This action returns all orders`;
-  }
+  async findAll(page: number, limit: number, qs: string) {
+    let { filter, projection, population } = aqp(qs);
+    let { sort }: { sort: any } = aqp(qs);
 
-  findOne(id: string) {
-    return `This action returns a #${id} order`;
-  }
+    delete filter.current
+    delete filter.pageSize
 
-  async returnID(id: string) {
-    if (!mongoose.Types.ObjectId.isValid(id)) {
-      throw new BadRequestException(INVALID_ID)
+    page = page ? page : 1
+    limit = limit ? limit : 10
+    let skip = (page - 1) * limit
+
+    const totalItems = (await this.orderModel.find(filter)).length
+    const totalPages = Math.ceil(totalItems / limit)
+
+    if (IsEmpty(sort as any)) {
+      sort = '-updatedAt'
     }
-    const orderInfo = await this.orderModel.findOne({ _id: id }).select('orderBy')
-    if (!orderInfo) {
-      throw new BadRequestException(NOT_ORDER_BY_ID)
-    } else {
-      return orderInfo
+
+    let orders = await this.orderModel.find(filter)
+      .skip(skip)
+      .limit(limit)
+      .sort(sort)
+      .select(projection)
+      .populate(population)
+      .exec();
+    return {
+      meta: {
+        current: page,
+        pageSize: limit,
+        pages: totalPages,
+        total: totalItems
+      },
+      result: orders
+    }
+  }
+
+  async findAllByUser(page: number, limit: number, qs: string, user: IUser) {
+    let { filter, projection, population } = aqp(qs);
+    let { sort }: { sort: any } = aqp(qs);
+
+    delete filter.current
+    delete filter.pageSize
+
+    page = page ? page : 1
+    limit = limit ? limit : 10
+    let skip = (page - 1) * limit
+
+    const totalItems = (await this.orderModel.find({ ...filter, orderBy: user._id })).length
+    const totalPages = Math.ceil(totalItems / limit)
+
+    if (IsEmpty(sort as any)) {
+      sort = '-updatedAt'
+    }
+
+    let orders = await this.orderModel.find({ ...filter, orderBy: user._id })
+      .skip(skip)
+      .limit(limit)
+      .sort(sort)
+      .select(projection)
+      .populate(population)
+      .exec();
+    return {
+      meta: {
+        current: page,
+        pageSize: limit,
+        pages: totalPages,
+        total: totalItems
+      },
+      result: orders
     }
   }
 

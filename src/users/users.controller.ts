@@ -23,8 +23,8 @@ export class UsersController {
   @Get()
   @ResponseMessage(USER_FETCH_ALL)
   @CheckPolicies({ action: Action.ReadAll, subject: UserSubject })
-  findAll() {
-    return this.usersService.findAll();
+  findAll(@Query('current') current: string, @Query('pageSize') pageSize: string, @Query() qs: string) {
+    return this.usersService.findAll(+current, +pageSize, qs);
   }
 
   @Get(':id')
