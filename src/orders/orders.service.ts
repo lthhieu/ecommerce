@@ -6,7 +6,7 @@ import { Order } from './schemas/order.schema';
 import mongoose, { Model } from 'mongoose';
 import { IUser } from 'src/configs/define.interface';
 import { UsersService } from 'src/users/users.service';
-import { COUPON_EXPIRED, INVALID_ID } from 'src/configs/response.constants';
+import { COUPON_EXPIRED, INVALID_ID, NOT_ORDER_BY_ID } from 'src/configs/response.constants';
 import { CouponsService } from 'src/coupons/coupons.service';
 import dayjs from 'dayjs'
 
@@ -53,8 +53,20 @@ export class OrdersService {
     return `This action returns all orders`;
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return `This action returns a #${id} order`;
+  }
+
+  async returnID(id: string) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    const orderInfo = await this.orderModel.findOne({ _id: id }).select('orderBy')
+    if (!orderInfo) {
+      throw new BadRequestException(NOT_ORDER_BY_ID)
+    } else {
+      return orderInfo
+    }
   }
 
   async update(id: string, updateOrderDto: UpdateOrderDto) {
@@ -66,7 +78,7 @@ export class OrdersService {
     })
   }
 
-  remove(id: number) {
+  remove(id: string) {
     return `This action removes a #${id} order`;
   }
 }

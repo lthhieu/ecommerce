@@ -22,7 +22,7 @@ export class UsersController {
 
   @Get()
   @ResponseMessage(USER_FETCH_ALL)
-  @CheckPolicies({ action: Action.Read, subject: UserSubject })
+  @CheckPolicies({ action: Action.ReadAll, subject: UserSubject })
   findAll() {
     return this.usersService.findAll();
   }

@@ -32,4 +32,5 @@ export class UploadSubject {
 }
 export class OrderSubject {
     _id: string;
+    orderBy: string
 }
