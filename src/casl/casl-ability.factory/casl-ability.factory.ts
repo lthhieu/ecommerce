@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { Action, IUser } from "src/configs/define.interface";
 import { Ability, AbilityBuilder, AbilityClass, ExtractSubjectType, InferSubjects } from '@casl/ability'
-import { FORBIDDEN_CREATE_BLOG, FORBIDDEN_CREATE_BLOG_CATEGORY, FORBIDDEN_CREATE_BRAND, FORBIDDEN_CREATE_COUPON, FORBIDDEN_CREATE_PRODUCT, FORBIDDEN_DELETE_BLOG, FORBIDDEN_DELETE_BLOG_CATEGORY, FORBIDDEN_DELETE_BRAND, FORBIDDEN_DELETE_CATEGORY, FORBIDDEN_DELETE_COUPON, FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_PRODUCT, FORBIDDEN_DELETE_USER, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE, FORBIDDEN_UPDATE_BLOG, FORBIDDEN_UPDATE_BLOG_CATEGORY, FORBIDDEN_UPDATE_BRAND, FORBIDDEN_UPDATE_CATEGORY, FORBIDDEN_UPDATE_COUPON, FORBIDDEN_UPDATE_PRODUCT, FORBIDDEN_UPLOAD_FILE } from "src/configs/response.constants";
-import { BlogCategorySubject, BlogSubject, BrandSubject, CategorySubject, CouponSubject, ProductSubject, UploadSubject, UserSubject } from "src/configs/define.class";
+import { FORBIDDEN_CREATE_BLOG, FORBIDDEN_CREATE_BLOG_CATEGORY, FORBIDDEN_CREATE_BRAND, FORBIDDEN_CREATE_COUPON, FORBIDDEN_CREATE_PRODUCT, FORBIDDEN_DELETE_BLOG, FORBIDDEN_DELETE_BLOG_CATEGORY, FORBIDDEN_DELETE_BRAND, FORBIDDEN_DELETE_CATEGORY, FORBIDDEN_DELETE_COUPON, FORBIDDEN_DELETE_MYSELF, FORBIDDEN_DELETE_PRODUCT, FORBIDDEN_DELETE_USER, FORBIDDEN_ORDER_UPDATED, FORBIDDEN_READ_BY_ID, FORBIDDEN_READ_USERS, FORBIDDEN_UPDATE, FORBIDDEN_UPDATE_BLOG, FORBIDDEN_UPDATE_BLOG_CATEGORY, FORBIDDEN_UPDATE_BRAND, FORBIDDEN_UPDATE_CATEGORY, FORBIDDEN_UPDATE_COUPON, FORBIDDEN_UPDATE_PRODUCT, FORBIDDEN_UPLOAD_FILE } from "src/configs/response.constants";
+import { BlogCategorySubject, BlogSubject, BrandSubject, CategorySubject, CouponSubject, OrderSubject, ProductSubject, UploadSubject, UserSubject } from "src/configs/define.class";
 export type Subjects = InferSubjects<typeof UserSubject> |
     InferSubjects<typeof ProductSubject> | 'all';
 
@@ -54,6 +54,9 @@ export class CaslAbilityFactory {
             cannot(Action.Delete, CouponSubject).because(FORBIDDEN_DELETE_COUPON);
             //upload
             cannot(Action.Upload, UploadSubject).because(FORBIDDEN_UPLOAD_FILE);
+            //Order
+            can(Action.Create, OrderSubject);
+            cannot(Action.Update, OrderSubject).because(FORBIDDEN_ORDER_UPDATED);
         }
 
         return build({

@@ -6,7 +6,7 @@ import { Order } from './schemas/order.schema';
 import mongoose, { Model } from 'mongoose';
 import { IUser } from 'src/configs/define.interface';
 import { UsersService } from 'src/users/users.service';
-import { INVALID_ID } from 'src/configs/response.constants';
+import { COUPON_EXPIRED, INVALID_ID } from 'src/configs/response.constants';
 import { CouponsService } from 'src/coupons/coupons.service';
 import dayjs from 'dayjs'
 
@@ -26,7 +26,7 @@ export class OrdersService {
     else {
       const couponInfo = await this.couponsService.findOne(coupon)
       if (dayjs().isAfter(couponInfo.expire)) {
-        throw new BadRequestException('Coupon Is Expired. Please try another or delete coupon')
+        throw new BadRequestException(COUPON_EXPIRED)
       }
       discount = couponInfo.discount
     }
@@ -57,7 +57,7 @@ export class OrdersService {
     return `This action returns a #${id} order`;
   }
 
-  update(id: number, updateOrderDto: UpdateOrderDto) {
+  update(id: string, updateOrderDto: UpdateOrderDto) {
     return `This action updates a #${id} order`;
   }
 

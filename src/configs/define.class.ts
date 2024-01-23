@@ -33,3 +33,6 @@ export class CouponSubject {
 export class UploadSubject {
     _id: string;
 }
+export class OrderSubject {
+    _id: string;
+}

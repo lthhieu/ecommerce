@@ -89,3 +89,8 @@ export const UPLOAD_FILES = 'Upload File(s) Successfully'
 export const PRODUCT_UPDATE_IMAGES = 'Product Updated Images'
 export const BLOG_UPDATE_IMAGE = 'Blog Updated Image'
 export const USER_UPDATED_CART = 'User Updated Cart'
+export const ORDER_CREATED = 'Order Created'
+export const ORDER_UPDATED = 'Order Updated Status'
+export const FORBIDDEN_ORDER_UPDATED = 'You Don\'t Have Permission To Update Order\'s Status'
+export const COUPON_EXPIRED = 'Coupon Is Expired. Please Try Another Or Recall Coupon'
+
