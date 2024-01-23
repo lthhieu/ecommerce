@@ -10,7 +10,7 @@ export class Order {
     @Prop({ type: [CartSchema] })
     products: Cart[];
 
-    @Prop({ enum: ['progressing', 'canceled', 'succeeded'], default: 'progressing' })
+    @Prop({ enum: ['PROGRESSING', 'CANCELED', 'SUCCEEDED'], default: 'PROGRESSING' })
     status: string;
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: User.name })
     orderBy: User;

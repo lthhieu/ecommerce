@@ -8,5 +8,6 @@ import { Coupon, CouponSchema } from './schemas/coupon.schema';
   imports: [MongooseModule.forFeature([{ name: Coupon.name, schema: CouponSchema }])],
   controllers: [CouponsController],
   providers: [CouponsService],
+  exports: [CouponsService]
 })
 export class CouponsModule { }

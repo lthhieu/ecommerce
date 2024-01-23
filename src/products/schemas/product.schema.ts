@@ -1,8 +1,22 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
 import { Category } from 'src/categories/schemas/category.schema';
+import { User } from 'src/users/schemas/user.schema';
 
 export type ProductDocument = HydratedDocument<Product>;
+
+@Schema({ _id: false })
+export class Ratings {
+    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'User' })
+    postedBy: User;
+    @Prop()
+    star: number;
+    @Prop()
+    comment: string;
+    @Prop()
+    postedAt: Date
+}
+export const RatingsSchema = SchemaFactory.createForClass(Ratings);
 
 @Schema({ timestamps: true })
 export class Product {
@@ -19,16 +33,16 @@ export class Product {
     brand: string;
 
     @Prop({ required: true })
-    price: Number;
+    price: number;
 
     @Prop({ type: mongoose.Schema.Types.ObjectId, ref: Category.name })
     category: Category;
 
     @Prop({ default: 0 })
-    quantity: Number;
+    quantity: number;
 
     @Prop({ default: 0 })
-    sold: Number;
+    sold: number;
 
     @Prop({ type: mongoose.Schema.Types.Array })
     images: {
@@ -36,19 +50,15 @@ export class Product {
         secure_url: string
     }[]
 
-    @Prop({ enum: ['gold', 'silver', 'gray'] })
+    @Prop({ enum: ['GOLD', 'SILVER', 'GRAY'] })
     color: string;
 
-    @Prop({ type: mongoose.Schema.Types.Array })
-    ratings: {
-        star: Number,
-        comment: string,
-        postedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-        postedAt: Date
-    }[]
+    @Prop({ type: [RatingsSchema] })
+    ratings: Ratings[];
+
 
     @Prop({ default: 0 })
-    totalRating: Number;
+    totalRating: number;
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product);
