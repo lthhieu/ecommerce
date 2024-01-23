@@ -57,8 +57,13 @@ export class OrdersService {
     return `This action returns a #${id} order`;
   }
 
-  update(id: string, updateOrderDto: UpdateOrderDto) {
-    return `This action updates a #${id} order`;
+  async update(id: string, updateOrderDto: UpdateOrderDto) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      throw new BadRequestException(INVALID_ID)
+    }
+    return await this.orderModel.updateOne({ _id: id }, {
+      status: updateOrderDto.status
+    })
   }
 
   remove(id: number) {

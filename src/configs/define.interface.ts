@@ -20,3 +20,9 @@ export interface PolicyHandler {
     action: Action,
     subject: Subjects
 }
+
+export enum STATUS {
+    Progressing = 'PROGRESSING',
+    Canceled = 'CANCELED',
+    Succeeded = 'SUCCEEDED'
+}
