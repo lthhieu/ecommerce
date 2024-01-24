@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
+import { Brand } from 'src/brands/schemas/brand.schema';
 import { Category } from 'src/categories/schemas/category.schema';
 import { User } from 'src/users/schemas/user.schema';
 
@@ -26,11 +27,11 @@ export class Product {
     @Prop({ required: true, unique: true, lowercase: true })
     slug: string;
 
-    @Prop({ required: true })
-    description: string;
+    @Prop({ required: true, type: mongoose.Schema.Types.Array })
+    description: string[];
 
-    @Prop({ required: true })
-    brand: string;
+    @Prop({ required: true, type: mongoose.Schema.Types.ObjectId, ref: Brand.name })
+    brand: Brand;
 
     @Prop({ required: true })
     price: number;
@@ -44,13 +45,13 @@ export class Product {
     @Prop({ default: 0 })
     sold: number;
 
-    @Prop({ type: mongoose.Schema.Types.Array })
-    images: {
-        public_id: string,
-        secure_url: string
-    }[]
+    @Prop()
+    thumb: string;
 
-    @Prop({ enum: ['GOLD', 'SILVER', 'GRAY'] })
+    @Prop({ type: mongoose.Schema.Types.Array })
+    images: string[]
+
+    @Prop()
     color: string;
 
     @Prop({ type: [RatingsSchema] })

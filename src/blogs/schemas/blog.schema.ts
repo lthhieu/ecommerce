@@ -20,7 +20,7 @@ export class Blog {
     category: BlogCategory;
 
     @Prop({ default: 0 })
-    views: Number;
+    views: number;
 
     @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: User.name })
     likes: User[];
@@ -28,17 +28,14 @@ export class Blog {
     @Prop({ type: [mongoose.Schema.Types.ObjectId], ref: User.name })
     dislikes: User[];
 
-    @Prop({ type: Object })
-    image: {
-        public_id: string,
-        secure_url: string
-    }
+    @Prop()
+    image: string
 
-    @Prop({ default: 'Admin' })
-    author: string
+    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: User.name })
+    author: User
 
     @Prop({ default: 0 })
-    totalRating: Number;
+    totalRating: number;
 }
 
 export const BlogSchema = SchemaFactory.createForClass(Blog);
