@@ -16,6 +16,7 @@ import { BrandsModule } from './brands/brands.module';
 import { CouponsModule } from './coupons/coupons.module';
 import { OrdersModule } from './orders/orders.module';
 import { CloudinaryModule } from './cloudinary/cloudinary.module';
+import { DatabasesModule } from './databases/databases.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -33,7 +34,8 @@ import { CloudinaryModule } from './cloudinary/cloudinary.module';
     BrandsModule,
     CouponsModule,
     OrdersModule,
-    CloudinaryModule],
+    CloudinaryModule,
+    DatabasesModule],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -36,7 +36,7 @@ export class Product {
     @Prop({ required: true })
     price: number;
 
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: Category.name })
+    @Prop({ required: true, type: mongoose.Schema.Types.ObjectId, ref: Category.name })
     category: Category;
 
     @Prop({ default: 0 })
@@ -51,8 +51,8 @@ export class Product {
     @Prop({ type: mongoose.Schema.Types.Array })
     images: string[]
 
-    @Prop()
-    color: string;
+    @Prop({ type: mongoose.Schema.Types.Array })
+    color: string[];
 
     @Prop({ type: [RatingsSchema] })
     ratings: Ratings[];

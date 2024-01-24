@@ -62,7 +62,7 @@ export class ProductsService {
       .select(projection)
       .populate(population)
       .exec();
-
+    //.populate([{ path: "brand", select: { title: 1 } }, { path: "category", select: { title: 1 } }])
     return {
       meta: {
         current: page,
