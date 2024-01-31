@@ -24,6 +24,8 @@ async function bootstrap() {
   //global response interceptor
   const reflector = app.get(Reflector);
   app.useGlobalInterceptors(new TransformInterceptor(reflector));
+  //cors
+  app.enableCors({ origin: configService.get<string>('FRONTEND_URI') });
   //global cookies
   app.use(cookieParser());
   //global jwt guard
