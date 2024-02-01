@@ -37,10 +37,10 @@ export class ProductsService {
   }
 
   async findAll(page: number, limit: number, qs: string) {
-    console.log(qs)
+
     let { filter, projection, population } = aqp(qs);
     let { sort }: { sort: any } = aqp(qs);
-    console.log(sort)
+
     delete filter.current
     delete filter.pageSize
 
@@ -54,8 +54,6 @@ export class ProductsService {
     if (!sort) {
       sort = '-updatedAt'
     }
-
-    console.log(sort)
 
     let products = await this.productModel.find(filter)
       .populate([{ path: "brand", select: { title: 1 } }, { path: "category", select: { title: 1 } }])
