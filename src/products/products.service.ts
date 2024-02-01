@@ -7,7 +7,6 @@ import mongoose, { Model } from 'mongoose';
 import slugify from 'slugify';
 import { FOUND_SLUG, INVALID_ID, NOT_PRODUCT_BY_ID } from 'src/configs/response.constants';
 import aqp from 'api-query-params';
-import { IsEmpty } from 'class-validator';
 import { IUser } from 'src/configs/define.interface';
 
 @Injectable()
@@ -38,9 +37,10 @@ export class ProductsService {
   }
 
   async findAll(page: number, limit: number, qs: string) {
+    console.log(qs)
     let { filter, projection, population } = aqp(qs);
     let { sort }: { sort: any } = aqp(qs);
-
+    console.log(sort)
     delete filter.current
     delete filter.pageSize
 
@@ -51,9 +51,11 @@ export class ProductsService {
     const totalItems = (await this.productModel.find(filter)).length
     const totalPages = Math.ceil(totalItems / limit)
 
-    if (IsEmpty(sort as any)) {
+    if (!sort) {
       sort = '-updatedAt'
     }
+
+    console.log(sort)
 
     let products = await this.productModel.find(filter)
       .populate([{ path: "brand", select: { title: 1 } }, { path: "category", select: { title: 1 } }])

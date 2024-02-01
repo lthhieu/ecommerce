@@ -8,7 +8,6 @@ import slugify from 'slugify';
 import { FOUND_SLUG, INVALID_ID, NOT_BLOG_BY_ID } from 'src/configs/response.constants';
 import { BlogCategoriesService } from 'src/blog-categories/blog-categories.service';
 import aqp from 'api-query-params';
-import { IsEmpty } from 'class-validator';
 import { IUser } from 'src/configs/define.interface';
 
 @Injectable()
@@ -55,7 +54,7 @@ export class BlogsService {
     const totalItems = (await this.blogModel.find(filter)).length
     const totalPages = Math.ceil(totalItems / limit)
 
-    if (IsEmpty(sort as any)) {
+    if (!sort) {
       sort = '-updatedAt'
     }
 

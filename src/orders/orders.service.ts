@@ -10,7 +10,6 @@ import { COUPON_EXPIRED, INVALID_ID, NOT_ORDER_BY_ID } from 'src/configs/respons
 import { CouponsService } from 'src/coupons/coupons.service';
 import dayjs from 'dayjs'
 import aqp from 'api-query-params';
-import { IsEmpty } from 'class-validator';
 
 @Injectable()
 export class OrdersService {
@@ -65,7 +64,7 @@ export class OrdersService {
     const totalItems = (await this.orderModel.find(filter)).length
     const totalPages = Math.ceil(totalItems / limit)
 
-    if (IsEmpty(sort as any)) {
+    if (!sort) {
       sort = '-updatedAt'
     }
 
@@ -101,7 +100,7 @@ export class OrdersService {
     const totalItems = (await this.orderModel.find({ ...filter, orderBy: user._id })).length
     const totalPages = Math.ceil(totalItems / limit)
 
-    if (IsEmpty(sort as any)) {
+    if (!sort) {
       sort = '-updatedAt'
     }
 

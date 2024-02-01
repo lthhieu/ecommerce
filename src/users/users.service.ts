@@ -7,7 +7,6 @@ import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
 import { FOUND_EMAIL, INVALID_ID, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
-import { IsEmpty } from 'class-validator';
 import aqp from 'api-query-params';
 
 @Injectable()
@@ -53,7 +52,7 @@ export class UsersService {
     const totalItems = (await this.userModel.find(filter)).length
     const totalPages = Math.ceil(totalItems / limit)
 
-    if (IsEmpty(sort as any)) {
+    if (!sort) {
       sort = '-updatedAt'
     }
 
