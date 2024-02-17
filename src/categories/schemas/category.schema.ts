@@ -9,6 +9,8 @@ export class Category {
     title: string;
     @Prop()
     slug: string;
+    @Prop({ default: '' })
+    image: string;
 }
 
 export const CategorySchema = SchemaFactory.createForClass(Category);

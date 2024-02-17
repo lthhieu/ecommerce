@@ -4,6 +4,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07a7513ffefd90ae01315",
         "title": "Smartphone",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/mobile-devices_300x.jpg?v=1613166682",
         "slug": "smartphone",
         "createdAt": "2024-01-24T02:48:21.468Z",
         "updatedAt": "2024-01-24T02:48:21.468Z",
@@ -12,6 +13,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07a7f13ffefd90ae01318",
         "title": "Tablet",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/pc-1_300x.jpg?v=1613166682",
         "slug": "tablet",
         "createdAt": "2024-01-24T02:48:31.561Z",
         "updatedAt": "2024-01-24T02:48:31.561Z",
@@ -20,6 +22,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07a8613ffefd90ae0131b",
         "title": "Laptop",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/laptop_300x.jpg?v=1613166811",
         "slug": "laptop",
         "createdAt": "2024-01-24T02:48:38.743Z",
         "updatedAt": "2024-01-24T02:48:38.743Z",
@@ -28,6 +31,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07a9713ffefd90ae0131e",
         "title": "Accessories",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/headphone_8467ba67-70c7-4977-b57e-8847d56549c6_300x.jpg?v=1613166811",
         "slug": "accessories",
         "createdAt": "2024-01-24T02:48:55.968Z",
         "updatedAt": "2024-01-24T02:48:55.968Z",
@@ -36,6 +40,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07aa113ffefd90ae01321",
         "title": "Television",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/television_300x.jpg?v=1613166810",
         "slug": "television",
         "createdAt": "2024-01-24T02:49:05.578Z",
         "updatedAt": "2024-01-24T02:49:05.578Z",
@@ -44,6 +49,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b07aa713ffefd90ae01324",
         "title": "Printer",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/printer_300x.jpg?v=1613166810",
         "slug": "printer",
         "createdAt": "2024-01-24T02:49:11.352Z",
         "updatedAt": "2024-01-24T02:49:11.352Z",
@@ -52,6 +58,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b08a547f7549b0b1e85533",
         "title": "Camera",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/headphone_8467ba67-70c7-4977-b57e-8847d56549c6_300x.jpg?v=1613166811",
         "slug": "camera",
         "createdAt": "2024-01-24T03:56:04.767Z",
         "updatedAt": "2024-01-24T03:56:04.767Z",
@@ -60,6 +67,7 @@ export const INIT_CATEGORIES = [
     {
         "_id": "65b0ae86fc4aa76631ee2825",
         "title": "Speaker",
+        "image": "https://digital-world-2.myshopify.com/cdn/shop/files/headphone_8467ba67-70c7-4977-b57e-8847d56549c6_300x.jpg?v=1613166811",
         "slug": "speaker",
         "createdAt": "2024-01-24T06:30:30.792Z",
         "updatedAt": "2024-01-24T06:30:30.792Z",
@@ -302,7 +310,7 @@ export const INIT_PRODUCTS = [
             "WHITE",
             "SPORT BAND"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:55:26.361Z",
         "updatedAt": "2024-01-24T06:55:26.361Z",
@@ -341,7 +349,7 @@ export const INIT_PRODUCTS = [
             "RED",
             "TEAL"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:54:30.341Z",
         "updatedAt": "2024-01-24T06:54:30.341Z",
@@ -379,7 +387,7 @@ export const INIT_PRODUCTS = [
             "NAVY BLUE",
             "STONE"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:53:24.971Z",
         "updatedAt": "2024-01-24T06:53:24.971Z",
@@ -407,7 +415,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:52:27.800Z",
         "updatedAt": "2024-01-24T06:52:27.800Z",
@@ -448,7 +456,7 @@ export const INIT_PRODUCTS = [
             "ROSE GOLD",
             "SILVER"
         ],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:48:34.768Z",
         "updatedAt": "2024-01-24T06:48:34.768Z",
@@ -481,7 +489,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:46:57.949Z",
         "updatedAt": "2024-01-24T06:46:57.949Z",
@@ -512,7 +520,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:46:18.933Z",
         "updatedAt": "2024-01-24T06:46:18.933Z",
@@ -541,7 +549,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:45:38.330Z",
         "updatedAt": "2024-01-24T06:45:38.330Z",
@@ -572,7 +580,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:44:37.812Z",
         "updatedAt": "2024-01-24T06:44:37.812Z",
@@ -601,7 +609,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:43:57.999Z",
         "updatedAt": "2024-01-24T06:43:57.999Z",
@@ -637,7 +645,7 @@ export const INIT_PRODUCTS = [
             "WHITE",
             "SPORT BAND"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:43:11.332Z",
         "updatedAt": "2024-01-24T06:43:11.332Z",
@@ -676,7 +684,7 @@ export const INIT_PRODUCTS = [
             "RED",
             "TEAL"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:42:26.231Z",
         "updatedAt": "2024-01-24T06:42:26.231Z",
@@ -714,7 +722,7 @@ export const INIT_PRODUCTS = [
             "NAVY BLUE",
             "STONE"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:41:47.824Z",
         "updatedAt": "2024-01-24T06:41:47.824Z",
@@ -742,7 +750,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:40:37.721Z",
         "updatedAt": "2024-01-24T06:40:37.721Z",
@@ -783,7 +791,7 @@ export const INIT_PRODUCTS = [
             "ROSE GOLD",
             "SILVER"
         ],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:39:59.766Z",
         "updatedAt": "2024-01-24T06:39:59.766Z",
@@ -816,7 +824,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:39:00.942Z",
         "updatedAt": "2024-01-24T06:39:00.942Z",
@@ -852,7 +860,7 @@ export const INIT_PRODUCTS = [
             "WHITE",
             "SPORT BAND"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:37:40.685Z",
         "updatedAt": "2024-01-24T06:37:40.685Z",
@@ -891,7 +899,7 @@ export const INIT_PRODUCTS = [
             "RED",
             "TEAL"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:36:53.949Z",
         "updatedAt": "2024-01-24T06:36:53.949Z",
@@ -929,7 +937,7 @@ export const INIT_PRODUCTS = [
             "NAVY BLUE",
             "STONE"
         ],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:36:11.263Z",
         "updatedAt": "2024-01-24T06:36:11.263Z",
@@ -957,7 +965,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:35:27.693Z",
         "updatedAt": "2024-01-24T06:35:27.693Z",
@@ -998,7 +1006,7 @@ export const INIT_PRODUCTS = [
             "ROSE GOLD",
             "SILVER"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:34:33.812Z",
         "updatedAt": "2024-01-24T06:34:33.812Z",
@@ -1031,7 +1039,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:33:31.967Z",
         "updatedAt": "2024-01-24T06:33:31.967Z",
@@ -1062,7 +1070,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:32:46.648Z",
         "updatedAt": "2024-01-24T06:32:46.648Z",
@@ -1091,7 +1099,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:31:50.948Z",
         "updatedAt": "2024-01-24T06:31:50.948Z",
@@ -1127,7 +1135,7 @@ export const INIT_PRODUCTS = [
             "WHITE",
             "SPORT BAND"
         ],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:29:55.789Z",
         "updatedAt": "2024-01-24T06:29:55.789Z",
@@ -1166,7 +1174,7 @@ export const INIT_PRODUCTS = [
             "RED",
             "TEAL"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:28:53.106Z",
         "updatedAt": "2024-01-24T06:28:53.106Z",
@@ -1204,7 +1212,7 @@ export const INIT_PRODUCTS = [
             "NAVY BLUE",
             "STONE"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:27:58.520Z",
         "updatedAt": "2024-01-24T06:27:58.520Z",
@@ -1273,7 +1281,7 @@ export const INIT_PRODUCTS = [
             "ROSE GOLD",
             "SILVER"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:26:00.803Z",
         "updatedAt": "2024-01-24T06:26:00.803Z",
@@ -1306,7 +1314,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:24:52.267Z",
         "updatedAt": "2024-01-24T06:24:52.267Z",
@@ -1337,7 +1345,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:23:57.204Z",
         "updatedAt": "2024-01-24T06:23:57.204Z",
@@ -1366,7 +1374,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:22:37.238Z",
         "updatedAt": "2024-01-24T06:22:37.238Z",
@@ -1402,7 +1410,7 @@ export const INIT_PRODUCTS = [
             "WHITE",
             "SPORT BAND"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:21:02.880Z",
         "updatedAt": "2024-01-24T06:21:02.880Z",
@@ -1441,7 +1449,7 @@ export const INIT_PRODUCTS = [
             "RED",
             "TEAL"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:20:11.019Z",
         "updatedAt": "2024-01-24T06:20:11.019Z",
@@ -1479,7 +1487,7 @@ export const INIT_PRODUCTS = [
             "NAVY BLUE",
             "STONE"
         ],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T06:19:25.696Z",
         "updatedAt": "2024-01-24T06:19:25.696Z",
@@ -1507,7 +1515,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T06:18:42.212Z",
         "updatedAt": "2024-01-24T06:18:42.212Z",
@@ -1548,7 +1556,7 @@ export const INIT_PRODUCTS = [
             "ROSE GOLD",
             "SILVER"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T06:17:57.278Z",
         "updatedAt": "2024-01-24T06:17:57.278Z",
@@ -1581,7 +1589,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T06:16:05.015Z",
         "updatedAt": "2024-01-24T06:16:05.015Z",
@@ -1612,7 +1620,7 @@ export const INIT_PRODUCTS = [
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T06:14:51.438Z",
         "updatedAt": "2024-01-24T06:14:51.438Z",
@@ -1641,7 +1649,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T03:58:07.277Z",
         "updatedAt": "2024-01-24T03:58:07.277Z",
@@ -1675,7 +1683,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_ab603453-7471-477c-a63d-987e838aca3b_1024x1024.jpg?v=1491404787"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T03:54:08.456Z",
         "updatedAt": "2024-01-24T03:54:08.456Z",
@@ -1709,7 +1717,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_4_1024x1024.jpg?v=1491404771"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:53:09.022Z",
         "updatedAt": "2024-01-24T03:53:09.022Z",
@@ -1743,7 +1751,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1_1024x1024.jpg?v=1491404800"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T03:51:59.022Z",
         "updatedAt": "2024-01-24T03:51:59.022Z",
@@ -1781,7 +1789,7 @@ export const INIT_PRODUCTS = [
             "BLUE",
             "WHITE"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T03:50:39.492Z",
         "updatedAt": "2024-01-24T03:50:39.492Z",
@@ -1815,7 +1823,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_0267f8b8-d3ca-475f-a6f2-0a999f863a0a_1024x1024.jpg?v=1491404804"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T03:49:31.079Z",
         "updatedAt": "2024-01-24T03:49:31.079Z",
@@ -1849,7 +1857,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/x1_1024x1024.jpg?v=1491404795"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T03:48:32.185Z",
         "updatedAt": "2024-01-24T03:48:32.185Z",
@@ -1883,7 +1891,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_86e4ff89-2434-4fe7-b758-49d789152900_1024x1024.jpg?v=1491404782"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:47:11.735Z",
         "updatedAt": "2024-01-24T03:47:11.735Z",
@@ -1917,7 +1925,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_76a134cf-ab12-45ae-bf1d-54a1ec20982d_1024x1024.jpg?v=1491404790"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T03:45:58.980Z",
         "updatedAt": "2024-01-24T03:45:58.980Z",
@@ -1956,7 +1964,7 @@ export const INIT_PRODUCTS = [
             "SILVER",
             "GOLD"
         ],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T03:43:22.688Z",
         "updatedAt": "2024-01-24T03:43:22.688Z",
@@ -1996,7 +2004,7 @@ export const INIT_PRODUCTS = [
             "SILVER",
             "GOLD"
         ],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T03:41:35.034Z",
         "updatedAt": "2024-01-24T03:41:35.034Z",
@@ -2030,7 +2038,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/asus-zenpad-3-80-z581kl-2_1024x1024.jpg?v=1491404859"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T03:40:05.299Z",
         "updatedAt": "2024-01-24T03:40:05.299Z",
@@ -2065,7 +2073,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/huawei-mediapad-t1-70-11_1024x1024.jpg?v=1491404838"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:39:05.201Z",
         "updatedAt": "2024-01-24T03:39:05.201Z",
@@ -2100,7 +2108,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/lenovo-yoga-tab3-plus2_1024x1024.jpg?v=1491404819"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T03:37:05.146Z",
         "updatedAt": "2024-01-24T03:37:05.146Z",
@@ -2133,7 +2141,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-3_1024x1024.jpg?v=1491404930"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T03:35:40.629Z",
         "updatedAt": "2024-01-24T03:35:40.629Z",
@@ -2170,7 +2178,7 @@ export const INIT_PRODUCTS = [
             "DAZZLING WHITE",
             "TITANIUM BRONZE"
         ],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T03:34:24.299Z",
         "updatedAt": "2024-01-24T03:34:24.299Z",
@@ -2209,7 +2217,7 @@ export const INIT_PRODUCTS = [
             "BLACK",
             "WHITE"
         ],
-        "totalRating": 0,
+        "totalRating": 4,
         "ratings": [],
         "createdAt": "2024-01-24T03:33:14.855Z",
         "updatedAt": "2024-01-24T03:33:14.855Z",
@@ -2249,7 +2257,7 @@ export const INIT_PRODUCTS = [
             "GRAY",
             "GOLD"
         ],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T03:31:57.709Z",
         "updatedAt": "2024-01-24T03:31:57.709Z",
@@ -2291,7 +2299,7 @@ export const INIT_PRODUCTS = [
             "VERY SILVER",
             "REALLY BLUE"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:28:53.567Z",
         "updatedAt": "2024-01-24T03:28:53.567Z",
@@ -2330,7 +2338,7 @@ export const INIT_PRODUCTS = [
             "GLACIER SILVER",
             "CAMELLIA RED"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:26:57.742Z",
         "updatedAt": "2024-01-24T03:26:57.742Z",
@@ -2370,7 +2378,7 @@ export const INIT_PRODUCTS = [
             "GOLD",
             "WHITE"
         ],
-        "totalRating": 0,
+        "totalRating": 2,
         "ratings": [],
         "createdAt": "2024-01-24T03:25:05.346Z",
         "updatedAt": "2024-01-24T03:25:05.346Z",
@@ -2406,7 +2414,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/lg-g5-02_1024x1024.jpg?v=1491404872"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 3,
         "ratings": [],
         "createdAt": "2024-01-24T03:23:33.395Z",
         "updatedAt": "2024-01-24T03:23:33.395Z",
@@ -2444,7 +2452,7 @@ export const INIT_PRODUCTS = [
             "BLACK",
             "GOLD"
         ],
-        "totalRating": 0,
+        "totalRating": 3.5,
         "ratings": [],
         "createdAt": "2024-01-24T03:22:12.897Z",
         "updatedAt": "2024-01-24T03:22:12.897Z",
@@ -2479,7 +2487,7 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-s6-edge-plus-black-sapphire-spin.0001_1024x1024.png?v=1491404832"
         ],
         "color": [],
-        "totalRating": 0,
+        "totalRating": 5,
         "ratings": [],
         "createdAt": "2024-01-24T03:20:31.185Z",
         "updatedAt": "2024-01-24T03:20:31.185Z",
@@ -2519,7 +2527,7 @@ export const INIT_PRODUCTS = [
             "FOREST BLUE",
             "DEEP PINK"
         ],
-        "totalRating": 0,
+        "totalRating": 1,
         "ratings": [],
         "createdAt": "2024-01-24T03:18:07.587Z",
         "updatedAt": "2024-01-24T03:18:07.587Z",
@@ -2556,7 +2564,7 @@ export const INIT_PRODUCTS = [
             "GOLD",
             "GRAY"
         ],
-        "totalRating": 0,
+        "totalRating": 4.5,
         "ratings": [],
         "createdAt": "2024-01-24T03:15:08.556Z",
         "updatedAt": "2024-01-24T03:15:08.556Z",
@@ -2582,7 +2590,7 @@ export const INIT_PRODUCTS = [
         "price": 74900,
         "category": "65b07a7513ffefd90ae01315",
         "quantity": 0,
-        "sold": 620,
+        "sold": 700,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1491404851",
         "images": [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1491404851",
@@ -2596,7 +2604,7 @@ export const INIT_PRODUCTS = [
             "GOLD",
             "CERAMIC"
         ],
-        "totalRating": 0,
+        "totalRating": 3.5,
         "ratings": [],
         "createdAt": "2024-01-24T03:09:44.426Z",
         "updatedAt": "2024-01-24T03:09:44.426Z",
