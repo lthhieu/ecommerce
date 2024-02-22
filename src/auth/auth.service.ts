@@ -33,7 +33,7 @@ export class AuthService {
         //save refresh token in cookies
         response.cookie('refresh_token', generateRefreshToken, {
             httpOnly: true,
-            maxAge: ms(this.configService.get<string>('REFRESH_TOKEN_EXPIRE')) * 1000
+            maxAge: ms(this.configService.get<string>('REFRESH_TOKEN_EXPIRE'))
         })
         const { refreshToken, password, role: roleUser, ...result } = updateRefreshToken.toObject();
         return {

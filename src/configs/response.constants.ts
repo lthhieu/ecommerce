@@ -10,6 +10,7 @@ export const NOT_FOUND_REFRESH_TOKEN = 'Not Found Refresh Token From Cookies. Pl
 export const TOKEN_EXPIRED = 'Token Is Expired. Please Login Again!'
 export const USER_LOGGEDOUT = 'User Logged Out'
 export const MAIL_RESET_PASSWORD = 'Mail Reset Password'
+export const CONFIRM_EMAIL = 'Confirm Email To Activate Your Account'
 export const NOT_FOUND_EMAIL = 'Email Is Not Existed In System'
 export const RESET_PASSWORD = 'Reset Password Successfully'
 export const RESET_PASSWORD_TOKEN_EXPIRE = 'Token Is Expired. Please Requested New Reset Password '
@@ -97,4 +98,5 @@ export const FORBIDDEN_READ_ORDERS = 'You Don\'t Have Permission To Read Orders 
 export const FORBIDDEN_READ_ORDER_BY_ID = 'You Don\'t Have Permission To Read Other Order Info'
 export const ORDER_FETCH_ALL = 'All Orders Are Fetched'
 export const NOT_ORDER_BY_ID = 'Cannot Found Order With Your Id You Given'
+export const INVALID_TOKEN_2 = 'Token Is Invalid Or Not Found Token From Cookies'
 

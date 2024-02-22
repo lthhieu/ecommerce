@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { MailService } from './mail.service';
 import { Public, ResponseMessage } from 'src/configs/custom.decorator';
 import { MAIL_RESET_PASSWORD } from 'src/configs/response.constants';

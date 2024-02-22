@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confirm Email</title>
+    <meta charset="UTF-8">
+</head>
+
+
+<body
+    style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';">
+    <table style="width: 100%; padding: 1rem; padding-bottom:3rem; background-color: #f2f2f2;">
+        <tr>
+            <td>
+                <table align="center"
+                    style="background-color: #fff; border-radius: 5px; padding: 1rem; width: 500px; margin:1rem auto 0">
+                    <tr>
+                        <td>
+                            <div
+                                style="text-align: left; font-size: 20px; padding:1rem 0;font-weight:500;color:crimson;">
+                                Xuân và Hiếu Shop</div>
+                        </td>
+                        <td>
+                            <div style="text-align: right; font-size: 16px;">Chất lượng nâng tầm phong cách</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="margin: 1rem; border-top: 1px solid rgba(5, 5, 5, 0.06);"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div style="text-align: left;padding:1rem 0;">
+                                <div style="font-size: 16px;">Dear {{receiver}},</div>
+                                <div style="font-size: 16px;">Hope you have a great day!
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="margin: 1rem; border-top: 1px solid rgba(5, 5, 5, 0.06);"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <div style="font-size: 16px;padding:1rem 0;text-decoration: none;">
+                                            You have requested to register new account with email <a
+                                                style="text-decoration: none;color: #15c;">{{email}}</a>. Please
+                                            click the link below to confirm your email. This link is only valid once for
+                                            the next 15 minutes.
+                                        </div>
+                                        <div style="font-size: 14px; padding:4px 0; margin:0; text-align:center">
+                                            <a href={{link}} target="_blank"
+                                                style="display: inline-block; width: 100%; height: 40px; line-height: 40px; cursor: pointer; border-radius: 5px; background-color: #ed1b2f; color: #fff; border: none; outline: none; text-decoration: none; font-size: 16px;">
+                                                CONFIRM EMAIL</a>
+                                        </div>
+                                        <div style="margin: 1rem 0; border-top: 1px solid rgba(5, 5, 5, 0.06);"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div style="text-align: left; font-size: 16px;text-decoration: none;">If you have any
+                                questions, please do not hesitate to reach out to us at <a
+                                    style="text-decoration: none;color: #15c;">{{emailSupport}}</a>.</div>
+                            <div style="text-align: left; font-size: 16px;padding:1rem 0;">Kind regards,</div>
+                            <div
+                                style="text-align: left; font-size: 16px; font-weight:500; color:crimson;padding-bottom: 1rem">
+                                Xuân và
+                                Hiếu Shop</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, Inject, Injectable, Req, Res, forwardRef } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateCartDto, UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
@@ -6,12 +6,19 @@ import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
-import { FOUND_EMAIL, INVALID_ID, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { FOUND_EMAIL, INVALID_ID, INVALID_TOKEN_2, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
 import aqp from 'api-query-params';
+import { Request, Response, } from 'express';
+import ms from 'ms';
+import { ConfigService } from '@nestjs/config';
+import { MailService } from 'src/mail/mail.service';
 
 @Injectable()
 export class UsersService {
-  constructor(@InjectModel(User.name) private userModel: Model<User>) { }
+  constructor(@InjectModel(User.name) private userModel: Model<User>,
+    private configService: ConfigService,
+    @Inject(forwardRef(() => MailService))
+    private mailService: MailService) { }
   hashPassword(plaintext: string) {
     const salt = genSaltSync(10);
     return hashSync(plaintext, salt);
@@ -22,17 +29,33 @@ export class UsersService {
   comparePassword(pass: string, hash: string) {
     return compareSync(pass, hash)
   }
-  async create(createUserDto: CreateUserDto) {
+
+  async create(createUserDto: CreateUserDto, response: Response) {
     //check mail exist
     let check = await this.findOneByEmail(createUserDto.email)
     if (check) {
       throw new BadRequestException(FOUND_EMAIL)
     }
     //create
-    let createNewUser = await this.userModel.create({
-      ...createUserDto,
-      password: this.hashPassword(createUserDto.password)
+    const token = crypto.randomBytes(16).toString('hex')
+    response.cookie('data_new_user', { ...createUserDto, token }, {
+      httpOnly: true,
+      maxAge: ms(this.configService.get<string>('REGISTER_USER_EXPIRE'))
     })
+    return this.mailService.sendEmailConfirmEmail(createUserDto, token)
+  }
+
+  async confirmCreate(request: Request, token: string, response: Response) {
+    const { cookies } = request
+    if (!cookies || cookies?.data_new_user?.token !== token) throw new BadRequestException(INVALID_TOKEN_2)
+    let createNewUser = await this.userModel.create({
+      firstName: cookies?.data_new_user?.firstName,
+      lastName: cookies?.data_new_user?.lastName,
+      email: cookies?.data_new_user?.email,
+      mobile: cookies?.data_new_user?.mobile,
+      password: this.hashPassword(cookies?.data_new_user?.password)
+    })
+    response.clearCookie('data_new_user', { httpOnly: true, secure: true })
     return {
       _id: createNewUser._id
     }

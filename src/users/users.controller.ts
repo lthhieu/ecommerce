@@ -1,13 +1,14 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters, ForbiddenException } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, UseFilters, ForbiddenException, Res, Req } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { ResetPasswordUserDto, UpdateCartDto, UpdateUserDto } from './dto/update-user.dto';
 import { CheckPolicies, Public, ResponseMessage, User } from 'src/configs/custom.decorator';
-import { RESET_PASSWORD, USER_CREATED, USER_DELETED, USER_FETCH_ALL, USER_FETCH_BY_ID, USER_UPDATED, USER_UPDATED_CART } from 'src/configs/response.constants';
+import { CONFIRM_EMAIL, RESET_PASSWORD, USER_CREATED, USER_DELETED, USER_FETCH_ALL, USER_FETCH_BY_ID, USER_UPDATED, USER_UPDATED_CART } from 'src/configs/response.constants';
 import { Action, IUser } from 'src/configs/define.interface';
 import { UserSubject } from 'src/configs/define.class';
 import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
 import { ForbiddenError } from '@casl/ability';
+import { Request, Response } from 'express';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService,
@@ -15,9 +16,16 @@ export class UsersController {
 
   @Public()
   @Post()
+  @ResponseMessage(CONFIRM_EMAIL)
+  create(@Body() createUserDto: CreateUserDto, @Res({ passthrough: true }) response: Response) {
+    return this.usersService.create(createUserDto, response);
+  }
+
+  @Public()
+  @Post('/confirm-email')
   @ResponseMessage(USER_CREATED)
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.usersService.create(createUserDto);
+  confirmCreate(@Req() request: Request, @Query('token') token: string, @Res({ passthrough: true }) response: Response) {
+    return this.usersService.confirmCreate(request, token, response);
   }
 
   @Get()

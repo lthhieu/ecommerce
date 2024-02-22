@@ -13,5 +13,6 @@ import { UsersModule } from 'src/users/users.module';
   ],
   controllers: [MailController],
   providers: [MailService],
+  exports: [MailService]
 })
 export class MailModule { }

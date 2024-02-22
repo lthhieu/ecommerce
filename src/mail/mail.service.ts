@@ -1,14 +1,16 @@
 import { MailerService } from '@nestjs-modules/mailer';
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, Inject, Injectable, forwardRef } from '@nestjs/common';
 import { NOT_FOUND_EMAIL } from 'src/configs/response.constants';
 import { UsersService } from 'src/users/users.service';
 import crypto from 'crypto'
 import { ConfigService } from '@nestjs/config';
 import ms from 'ms';
+import { CreateUserDto } from 'src/users/dto/create-user.dto';
 
 @Injectable()
 export class MailService {
     constructor(private readonly mailerService: MailerService,
+        @Inject(forwardRef(() => UsersService))
         private usersService: UsersService,
         private configService: ConfigService) { }
     async sendEmailResetPassword(email: string) {
@@ -29,6 +31,23 @@ export class MailService {
             context: {
                 receiver,
                 email,
+                link,
+                emailSupport: this.configService.get<string>('EMAIL_AUTH_USER')
+            }
+        });
+        return { token }
+    }
+
+    async sendEmailConfirmEmail(createUserDto: CreateUserDto, token: string) {
+        const link = `${this.configService.get<string>('FRONTEND_URI')}/confirm-email?token=${token}`;
+        await this.mailerService.sendMail({
+            to: createUserDto.email, // list of receivers
+            from: 'Xuân và Hiếu Shop Notification noreply@nestjs.com', // sender address
+            subject: 'Confirm Email', // Subject line
+            template: 'confirm-email',
+            context: {
+                receiver: `${createUserDto.firstName} ${createUserDto.lastName}`,
+                email: createUserDto.email,
                 link,
                 emailSupport: this.configService.get<string>('EMAIL_AUTH_USER')
             }
