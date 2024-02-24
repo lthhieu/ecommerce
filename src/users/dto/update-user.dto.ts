@@ -1,6 +1,6 @@
 import { OmitType } from '@nestjs/mapped-types';
 import { CreateUserDto } from './create-user.dto';
-import { ArrayMinSize, IsArray, IsBoolean, IsMongoId, IsNotEmpty, IsNotEmptyObject, IsNumber, IsObject, IsString, ValidateNested } from 'class-validator';
+import { IsBoolean, IsMongoId, IsNotEmpty, IsNotEmptyObject, IsNumber, IsObject, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import mongoose from 'mongoose';
 

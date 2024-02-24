@@ -62,6 +62,12 @@ export class User {
 
     @Prop()
     passwordResetExpire: string;
+
+    @Prop()
+    confirmEmailToken: string;
+
+    @Prop()
+    confirmEmailExpire: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

@@ -1,4 +1,4 @@
-import { BadRequestException, Inject, Injectable, Req, Res, forwardRef } from '@nestjs/common';
+import { BadRequestException, Inject, Injectable, forwardRef } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateCartDto, UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/mongoose';
@@ -6,7 +6,7 @@ import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
-import { FOUND_EMAIL, INVALID_ID, INVALID_TOKEN_2, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { CONFIRM_EMAIL_TOKEN_EXPIRE, FOUND_EMAIL, INVALID_ID, INVALID_TOKEN_2, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
 import aqp from 'api-query-params';
 import { Request, Response, } from 'express';
 import ms from 'ms';
@@ -30,35 +30,50 @@ export class UsersService {
     return compareSync(pass, hash)
   }
 
-  async create(createUserDto: CreateUserDto, response: Response) {
+  async create(createUserDto: CreateUserDto) {
     //check mail exist
     let check = await this.findOneByEmail(createUserDto.email)
-    if (check) {
+    if (check && !check?.confirmEmailToken) {
       throw new BadRequestException(FOUND_EMAIL)
     }
-    //create
-    const token = crypto.randomBytes(16).toString('hex')
-    response.cookie('data_new_user', { ...createUserDto, token }, {
-      httpOnly: true,
-      maxAge: ms(this.configService.get<string>('REGISTER_USER_EXPIRE'))
-    })
+    const { email, firstName, lastName, mobile, password } = createUserDto
+    const token = crypto.randomBytes(16).toString('hex');
+    const confirmEmailToken = crypto.createHash('sha256').update(token).digest('hex');
+    const confirmEmailExpire = Date.now() + ms(this.configService.get<string>('REGISTER_USER_EXPIRE'))
+    if (check?.confirmEmailToken) {
+      //
+      await this.userModel.findByIdAndUpdate(check._id, {
+        confirmEmailToken, confirmEmailExpire
+      })
+    } else {
+      let newUser = await this.userModel.create({
+        email, firstName, lastName, mobile, password
+      })
+
+      await this.userModel.findByIdAndUpdate(newUser._id, {
+        confirmEmailToken, confirmEmailExpire
+      })
+    }
+
     return this.mailService.sendEmailConfirmEmail(createUserDto, token)
   }
 
-  async confirmCreate(request: Request, token: string, response: Response) {
-    const { cookies } = request
-    if (!cookies || cookies?.data_new_user?.token !== token) throw new BadRequestException(INVALID_TOKEN_2)
-    let createNewUser = await this.userModel.create({
-      firstName: cookies?.data_new_user?.firstName,
-      lastName: cookies?.data_new_user?.lastName,
-      email: cookies?.data_new_user?.email,
-      mobile: cookies?.data_new_user?.mobile,
-      password: this.hashPassword(cookies?.data_new_user?.password)
+  async checkConfirmEmailToken(confirmEmailToken: string) {
+    return await this.userModel.findOne({
+      confirmEmailToken, confirmEmailExpire: { $gt: Date.now() }
     })
-    response.clearCookie('data_new_user', { httpOnly: true, secure: true })
-    return {
-      _id: createNewUser._id
+  }
+
+  async confirmCreate(token: string) {
+    const confirmEmailToken = crypto.createHash('sha256').update(token).digest('hex');
+    const checkToken = await this.checkConfirmEmailToken(confirmEmailToken)
+    if (!checkToken) throw new BadRequestException(CONFIRM_EMAIL_TOKEN_EXPIRE)
+    if (!mongoose.Types.ObjectId.isValid(checkToken._id)) {
+      throw new BadRequestException(INVALID_ID)
     }
+    return await this.userModel.findByIdAndUpdate(checkToken._id, {
+      password: this.hashPassword(checkToken.password), confirmEmailToken: null, confirmEmailExpire: null
+    }).select('_id')
   }
 
   async findAll(page: number, limit: number, qs: string) {
