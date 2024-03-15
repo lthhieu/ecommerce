@@ -296,6 +296,7 @@ export const INIT_PRODUCTS = [
             "Internal: No",
             "Camera: No"
         ],
+        "variants": [],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 9061708,
         "category": "65b07aa113ffefd90ae01321",
@@ -306,11 +307,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1491404922",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-watch2-edition-42mm2_1024x1024.jpg?v=1491404922"
         ],
-        "color": [
-            "WHITE",
-            "SPORT BAND"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:55:26.361Z",
         "updatedAt": "2024-01-24T06:55:26.361Z",
@@ -331,6 +332,18 @@ export const INIT_PRODUCTS = [
             "Weight: 800g",
             "Power supply: 5V / 2.3A"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "blue",
+                    "grey",
+                    "red",
+                    "teal"
+                ]
+            }
+        ],
         "brand": "65b08b2b7f7549b0b1e85545",
         "price": 3314031,
         "category": "65b07aa113ffefd90ae01321",
@@ -342,14 +355,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_1024x1024.jpg?v=1491404907",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_2_1024x1024.jpg?v=1491404907"
         ],
-        "color": [
-            "BLACK",
-            "BLUE",
-            "GREY",
-            "RED",
-            "TEAL"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:54:30.341Z",
         "updatedAt": "2024-01-24T06:54:30.341Z",
@@ -371,6 +381,16 @@ export const INIT_PRODUCTS = [
             "1-Year Limited Hardware Warranty",
             "Requirements: Windows® 7 to latest"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "navy blue",
+                    "stone"
+                ]
+            }
+        ],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 441788,
         "category": "65b07aa113ffefd90ae01321",
@@ -382,12 +402,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z1_377a4aa6-df39-466b-8234-d7c2f6f4ca1a_1024x1024.jpg?v=1491404814",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2ca9a51c-540d-4bbc-8be1-88dc83ccefa1_1024x1024.jpg?v=1491404814"
         ],
-        "color": [
-            "BLACK",
-            "NAVY BLUE",
-            "STONE"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:53:24.971Z",
         "updatedAt": "2024-01-24T06:53:24.971Z",
@@ -407,6 +426,7 @@ export const INIT_PRODUCTS = [
             "Nano USB receiver",
             "3-year Limited hardware warranty"
         ],
+        "variants": [],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 597728,
         "category": "65b07aa113ffefd90ae01321",
@@ -414,8 +434,11 @@ export const INIT_PRODUCTS = [
         "sold": 70,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
-        "color": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:52:27.800Z",
         "updatedAt": "2024-01-24T06:52:27.800Z",
@@ -437,6 +460,24 @@ export const INIT_PRODUCTS = [
             "Internal: 4 GB, 512 MB RAM",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black leather",
+                    "black metal",
+                    "rose gold",
+                    "silver"
+                ]
+            },
+            {
+                "label": "Traps",
+                "variants": [
+                    "42mm",
+                    "46mm"
+                ]
+            }
+        ],
         "brand": "65b08b167f7549b0b1e8553f",
         "price": 8594870,
         "category": "65b07aa113ffefd90ae01321",
@@ -450,13 +491,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-3_1024x1024.jpg?v=1491404918",
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-4_1024x1024.jpg?v=1491404918"
         ],
-        "color": [
-            "BLACK LEATHER",
-            "BLACK METAL",
-            "ROSE GOLD",
-            "SILVER"
-        ],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:48:34.768Z",
         "updatedAt": "2024-01-24T06:48:34.768Z",
@@ -476,6 +515,7 @@ export const INIT_PRODUCTS = [
             "Platform: Samsung Gear VR powered by Oculus",
             "Supported: Note5, Note7, S6, S6 Edge, S6 Edge+, S7, S7 Edge"
         ],
+        "variants": [],
         "brand": "65b07b553d16e7a992945620",
         "price": 2431189,
         "category": "65b07aa113ffefd90ae01321",
@@ -488,8 +528,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_1024x1024.jpg?v=1491404913",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
-        "color": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:46:57.949Z",
         "updatedAt": "2024-01-24T06:46:57.949Z",
@@ -519,8 +562,12 @@ export const INIT_PRODUCTS = [
         "sold": 40,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:46:18.933Z",
         "updatedAt": "2024-01-24T06:46:18.933Z",
@@ -548,8 +595,12 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1491404811",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
-        "color": [],
+        "variants": [],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:45:38.330Z",
         "updatedAt": "2024-01-24T06:45:38.330Z",
@@ -579,8 +630,12 @@ export const INIT_PRODUCTS = [
         "sold": 20,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:44:37.812Z",
         "updatedAt": "2024-01-24T06:44:37.812Z",
@@ -608,8 +663,12 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1491404811",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
-        "color": [],
+        "variants": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:43:57.999Z",
         "updatedAt": "2024-01-24T06:43:57.999Z",
@@ -631,6 +690,29 @@ export const INIT_PRODUCTS = [
             "Internal: No",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Type",
+                "variants": [
+                    "edition",
+                    "sport"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "white",
+                    "sport band"
+                ]
+            },
+            {
+                "label": "Strap",
+                "variants": [
+                    "42mm",
+                    "38mm"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 9061708,
         "category": "65b07a9713ffefd90ae0131e",
@@ -641,11 +723,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1491404922",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-watch2-edition-42mm2_1024x1024.jpg?v=1491404922"
         ],
-        "color": [
-            "WHITE",
-            "SPORT BAND"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:43:11.332Z",
         "updatedAt": "2024-01-24T06:43:11.332Z",
@@ -666,6 +748,18 @@ export const INIT_PRODUCTS = [
             "Weight: 800g",
             "Power supply: 5V / 2.3A"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "blue",
+                    "grey",
+                    "red",
+                    "teal"
+                ]
+            }
+        ],
         "brand": "65b08b2b7f7549b0b1e85545",
         "price": 3314031,
         "category": "65b07a9713ffefd90ae0131e",
@@ -677,14 +771,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_1024x1024.jpg?v=1491404907",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_2_1024x1024.jpg?v=1491404907"
         ],
-        "color": [
-            "BLACK",
-            "BLUE",
-            "GREY",
-            "RED",
-            "TEAL"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:42:26.231Z",
         "updatedAt": "2024-01-24T06:42:26.231Z",
@@ -706,6 +797,16 @@ export const INIT_PRODUCTS = [
             "1-Year Limited Hardware Warranty",
             "Requirements: Windows® 7 to latest"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "navy blue",
+                    "stone"
+                ]
+            }
+        ],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 441788,
         "category": "65b07a9713ffefd90ae0131e",
@@ -717,12 +818,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z1_377a4aa6-df39-466b-8234-d7c2f6f4ca1a_1024x1024.jpg?v=1491404814",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2ca9a51c-540d-4bbc-8be1-88dc83ccefa1_1024x1024.jpg?v=1491404814"
         ],
-        "color": [
-            "BLACK",
-            "NAVY BLUE",
-            "STONE"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:41:47.824Z",
         "updatedAt": "2024-01-24T06:41:47.824Z",
@@ -742,6 +842,7 @@ export const INIT_PRODUCTS = [
             "Nano USB receiver",
             "3-year Limited hardware warranty"
         ],
+        "variants": [],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 597728,
         "category": "65b07a9713ffefd90ae0131e",
@@ -749,8 +850,11 @@ export const INIT_PRODUCTS = [
         "sold": 140,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
-        "color": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:40:37.721Z",
         "updatedAt": "2024-01-24T06:40:37.721Z",
@@ -772,6 +876,24 @@ export const INIT_PRODUCTS = [
             "Internal: 4 GB, 512 MB RAM",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black leather",
+                    "black metal",
+                    "rose gold",
+                    "silver"
+                ]
+            },
+            {
+                "label": "Traps",
+                "variants": [
+                    "42mm",
+                    "46mm"
+                ]
+            }
+        ],
         "brand": "65b08b167f7549b0b1e8553f",
         "price": 8594870,
         "category": "65b07a9713ffefd90ae0131e",
@@ -785,13 +907,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-3_1024x1024.jpg?v=1491404918",
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-4_1024x1024.jpg?v=1491404918"
         ],
-        "color": [
-            "BLACK LEATHER",
-            "BLACK METAL",
-            "ROSE GOLD",
-            "SILVER"
-        ],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:39:59.766Z",
         "updatedAt": "2024-01-24T06:39:59.766Z",
@@ -811,6 +931,7 @@ export const INIT_PRODUCTS = [
             "Platform: Samsung Gear VR powered by Oculus",
             "Supported: Note5, Note7, S6, S6 Edge, S6 Edge+, S7, S7 Edge"
         ],
+        "variants": [],
         "brand": "65b07b553d16e7a992945620",
         "price": 2431189,
         "category": "65b07a9713ffefd90ae0131e",
@@ -823,8 +944,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_1024x1024.jpg?v=1491404913",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
-        "color": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:39:00.942Z",
         "updatedAt": "2024-01-24T06:39:00.942Z",
@@ -846,6 +970,29 @@ export const INIT_PRODUCTS = [
             "Internal: No",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Type",
+                "variants": [
+                    "edition",
+                    "sport"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "white",
+                    "sport band"
+                ]
+            },
+            {
+                "label": "Strap",
+                "variants": [
+                    "42mm",
+                    "38mm"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 9061708,
         "category": "65b0ae86fc4aa76631ee2825",
@@ -856,11 +1003,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1491404922",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-watch2-edition-42mm2_1024x1024.jpg?v=1491404922"
         ],
-        "color": [
-            "WHITE",
-            "SPORT BAND"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:37:40.685Z",
         "updatedAt": "2024-01-24T06:37:40.685Z",
@@ -881,6 +1028,18 @@ export const INIT_PRODUCTS = [
             "Weight: 800g",
             "Power supply: 5V / 2.3A"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "blue",
+                    "grey",
+                    "red",
+                    "teal"
+                ]
+            }
+        ],
         "brand": "65b08b2b7f7549b0b1e85545",
         "price": 3314031,
         "category": "65b0ae86fc4aa76631ee2825",
@@ -892,14 +1051,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_1024x1024.jpg?v=1491404907",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_2_1024x1024.jpg?v=1491404907"
         ],
-        "color": [
-            "BLACK",
-            "BLUE",
-            "GREY",
-            "RED",
-            "TEAL"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:36:53.949Z",
         "updatedAt": "2024-01-24T06:36:53.949Z",
@@ -921,6 +1077,16 @@ export const INIT_PRODUCTS = [
             "1-Year Limited Hardware Warranty",
             "Requirements: Windows® 7 to latest"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "navy blue",
+                    "stone"
+                ]
+            }
+        ],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 441788,
         "category": "65b0ae86fc4aa76631ee2825",
@@ -932,12 +1098,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z1_377a4aa6-df39-466b-8234-d7c2f6f4ca1a_1024x1024.jpg?v=1491404814",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2ca9a51c-540d-4bbc-8be1-88dc83ccefa1_1024x1024.jpg?v=1491404814"
         ],
-        "color": [
-            "BLACK",
-            "NAVY BLUE",
-            "STONE"
-        ],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:36:11.263Z",
         "updatedAt": "2024-01-24T06:36:11.263Z",
@@ -964,8 +1129,12 @@ export const INIT_PRODUCTS = [
         "sold": 200,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:35:27.693Z",
         "updatedAt": "2024-01-24T06:35:27.693Z",
@@ -987,6 +1156,24 @@ export const INIT_PRODUCTS = [
             "Internal: 4 GB, 512 MB RAM",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black leather",
+                    "black metal",
+                    "rose gold",
+                    "silver"
+                ]
+            },
+            {
+                "label": "Traps",
+                "variants": [
+                    "42mm",
+                    "46mm"
+                ]
+            }
+        ],
         "brand": "65b08b167f7549b0b1e8553f",
         "price": 8594870,
         "category": "65b0ae86fc4aa76631ee2825",
@@ -1000,13 +1187,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-3_1024x1024.jpg?v=1491404918",
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-4_1024x1024.jpg?v=1491404918"
         ],
-        "color": [
-            "BLACK LEATHER",
-            "BLACK METAL",
-            "ROSE GOLD",
-            "SILVER"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:34:33.812Z",
         "updatedAt": "2024-01-24T06:34:33.812Z",
@@ -1026,6 +1211,7 @@ export const INIT_PRODUCTS = [
             "Platform: Samsung Gear VR powered by Oculus",
             "Supported: Note5, Note7, S6, S6 Edge, S6 Edge+, S7, S7 Edge"
         ],
+        "variants": [],
         "brand": "65b07b553d16e7a992945620",
         "price": 2431189,
         "category": "65b0ae86fc4aa76631ee2825",
@@ -1038,8 +1224,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_1024x1024.jpg?v=1491404913",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
-        "color": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:33:31.967Z",
         "updatedAt": "2024-01-24T06:33:31.967Z",
@@ -1069,8 +1258,12 @@ export const INIT_PRODUCTS = [
         "sold": 230,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:32:46.648Z",
         "updatedAt": "2024-01-24T06:32:46.648Z",
@@ -1098,8 +1291,12 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1491404811",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
-        "color": [],
+        "variants": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:31:50.948Z",
         "updatedAt": "2024-01-24T06:31:50.948Z",
@@ -1121,6 +1318,29 @@ export const INIT_PRODUCTS = [
             "Internal: No",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Type",
+                "variants": [
+                    "edition",
+                    "sport"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "white",
+                    "sport band"
+                ]
+            },
+            {
+                "label": "Strap",
+                "variants": [
+                    "42mm",
+                    "38mm"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 9061708,
         "category": "65b07aa713ffefd90ae01324",
@@ -1131,11 +1351,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1491404922",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-watch2-edition-42mm2_1024x1024.jpg?v=1491404922"
         ],
-        "color": [
-            "WHITE",
-            "SPORT BAND"
-        ],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:29:55.789Z",
         "updatedAt": "2024-01-24T06:29:55.789Z",
@@ -1156,6 +1376,18 @@ export const INIT_PRODUCTS = [
             "Weight: 800g",
             "Power supply: 5V / 2.3A"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "blue",
+                    "grey",
+                    "red",
+                    "teal"
+                ]
+            }
+        ],
         "brand": "65b08b2b7f7549b0b1e85545",
         "price": 3314031,
         "category": "65b07aa713ffefd90ae01324",
@@ -1167,14 +1399,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_1024x1024.jpg?v=1491404907",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_2_1024x1024.jpg?v=1491404907"
         ],
-        "color": [
-            "BLACK",
-            "BLUE",
-            "GREY",
-            "RED",
-            "TEAL"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:28:53.106Z",
         "updatedAt": "2024-01-24T06:28:53.106Z",
@@ -1196,6 +1425,16 @@ export const INIT_PRODUCTS = [
             "1-Year Limited Hardware Warranty",
             "Requirements: Windows® 7 to latest"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "navy blue",
+                    "stone"
+                ]
+            }
+        ],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 441788,
         "category": "65b07aa713ffefd90ae01324",
@@ -1207,12 +1446,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z1_377a4aa6-df39-466b-8234-d7c2f6f4ca1a_1024x1024.jpg?v=1491404814",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2ca9a51c-540d-4bbc-8be1-88dc83ccefa1_1024x1024.jpg?v=1491404814"
         ],
-        "color": [
-            "BLACK",
-            "NAVY BLUE",
-            "STONE"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:27:58.520Z",
         "updatedAt": "2024-01-24T06:27:58.520Z",
@@ -1239,8 +1477,12 @@ export const INIT_PRODUCTS = [
         "sold": 280,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 0,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:26:55.807Z",
         "updatedAt": "2024-01-24T06:26:55.807Z",
@@ -1262,6 +1504,24 @@ export const INIT_PRODUCTS = [
             "Internal: 4 GB, 512 MB RAM",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black leather",
+                    "black metal",
+                    "rose gold",
+                    "silver"
+                ]
+            },
+            {
+                "label": "Traps",
+                "variants": [
+                    "42mm",
+                    "46mm"
+                ]
+            }
+        ],
         "brand": "65b08b167f7549b0b1e8553f",
         "price": 8594870,
         "category": "65b07aa713ffefd90ae01324",
@@ -1275,13 +1535,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-3_1024x1024.jpg?v=1491404918",
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-4_1024x1024.jpg?v=1491404918"
         ],
-        "color": [
-            "BLACK LEATHER",
-            "BLACK METAL",
-            "ROSE GOLD",
-            "SILVER"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:26:00.803Z",
         "updatedAt": "2024-01-24T06:26:00.803Z",
@@ -1301,6 +1559,7 @@ export const INIT_PRODUCTS = [
             "Platform: Samsung Gear VR powered by Oculus",
             "Supported: Note5, Note7, S6, S6 Edge, S6 Edge+, S7, S7 Edge"
         ],
+        "variants": [],
         "brand": "65b07b553d16e7a992945620",
         "price": 2431189,
         "category": "65b07aa713ffefd90ae01324",
@@ -1313,8 +1572,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_1024x1024.jpg?v=1491404913",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
-        "color": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:24:52.267Z",
         "updatedAt": "2024-01-24T06:24:52.267Z",
@@ -1344,8 +1606,12 @@ export const INIT_PRODUCTS = [
         "sold": 310,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:23:57.204Z",
         "updatedAt": "2024-01-24T06:23:57.204Z",
@@ -1373,8 +1639,12 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1491404811",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
-        "color": [],
+        "variants": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:22:37.238Z",
         "updatedAt": "2024-01-24T06:22:37.238Z",
@@ -1396,6 +1666,29 @@ export const INIT_PRODUCTS = [
             "Internal: No",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Type",
+                "variants": [
+                    "edition",
+                    "sport"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "white",
+                    "sport band"
+                ]
+            },
+            {
+                "label": "Strap",
+                "variants": [
+                    "42mm",
+                    "38mm"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 9061708,
         "category": "65b08a547f7549b0b1e85533",
@@ -1406,11 +1699,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1491404922",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-watch2-edition-42mm2_1024x1024.jpg?v=1491404922"
         ],
-        "color": [
-            "WHITE",
-            "SPORT BAND"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:21:02.880Z",
         "updatedAt": "2024-01-24T06:21:02.880Z",
@@ -1431,6 +1724,18 @@ export const INIT_PRODUCTS = [
             "Weight: 800g",
             "Power supply: 5V / 2.3A"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "blue",
+                    "grey",
+                    "red",
+                    "teal"
+                ]
+            }
+        ],
         "brand": "65b08b2b7f7549b0b1e85545",
         "price": 3314031,
         "category": "65b08a547f7549b0b1e85533",
@@ -1442,14 +1747,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_1024x1024.jpg?v=1491404907",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_2_1024x1024.jpg?v=1491404907"
         ],
-        "color": [
-            "BLACK",
-            "BLUE",
-            "GREY",
-            "RED",
-            "TEAL"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:20:11.019Z",
         "updatedAt": "2024-01-24T06:20:11.019Z",
@@ -1471,6 +1773,16 @@ export const INIT_PRODUCTS = [
             "1-Year Limited Hardware Warranty",
             "Requirements: Windows® 7 to latest"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "navy blue",
+                    "stone"
+                ]
+            }
+        ],
         "brand": "65b08b217f7549b0b1e85542",
         "price": 441788,
         "category": "65b08a547f7549b0b1e85533",
@@ -1482,12 +1794,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z1_377a4aa6-df39-466b-8234-d7c2f6f4ca1a_1024x1024.jpg?v=1491404814",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2ca9a51c-540d-4bbc-8be1-88dc83ccefa1_1024x1024.jpg?v=1491404814"
         ],
-        "color": [
-            "BLACK",
-            "NAVY BLUE",
-            "STONE"
-        ],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:19:25.696Z",
         "updatedAt": "2024-01-24T06:19:25.696Z",
@@ -1514,8 +1825,12 @@ export const INIT_PRODUCTS = [
         "sold": 360,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z6_1024x1024.jpg?v=1491404809",
         "images": [],
-        "color": [],
+        "variants": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:18:42.212Z",
         "updatedAt": "2024-01-24T06:18:42.212Z",
@@ -1537,6 +1852,24 @@ export const INIT_PRODUCTS = [
             "Internal: 4 GB, 512 MB RAM",
             "Camera: No"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black leather",
+                    "black metal",
+                    "rose gold",
+                    "silver"
+                ]
+            },
+            {
+                "label": "Traps",
+                "variants": [
+                    "42mm",
+                    "46mm"
+                ]
+            }
+        ],
         "brand": "65b08b167f7549b0b1e8553f",
         "price": 8594870,
         "category": "65b08a547f7549b0b1e85533",
@@ -1550,13 +1883,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-3_1024x1024.jpg?v=1491404918",
             "https://digital-world-2.myshopify.com/cdn/shop/products/motorola-moto-360-2015-4_1024x1024.jpg?v=1491404918"
         ],
-        "color": [
-            "BLACK LEATHER",
-            "BLACK METAL",
-            "ROSE GOLD",
-            "SILVER"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:17:57.278Z",
         "updatedAt": "2024-01-24T06:17:57.278Z",
@@ -1576,6 +1907,7 @@ export const INIT_PRODUCTS = [
             "Platform: Samsung Gear VR powered by Oculus",
             "Supported: Note5, Note7, S6, S6 Edge, S6 Edge+, S7, S7 Edge"
         ],
+        "variants": [],
         "brand": "65b07b553d16e7a992945620",
         "price": 24311,
         "category": "65b08a547f7549b0b1e85533",
@@ -1588,8 +1920,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_1024x1024.jpg?v=1491404913",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_1024x1024.jpg?v=1491404913"
         ],
-        "color": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:16:05.015Z",
         "updatedAt": "2024-01-24T06:16:05.015Z",
@@ -1612,6 +1947,7 @@ export const INIT_PRODUCTS = [
             "Always in control",
             "Peace of mind"
         ],
+        "variants": [],
         "brand": "65b08afb7f7549b0b1e8553c",
         "price": 16944,
         "category": "65b08a547f7549b0b1e85533",
@@ -1619,8 +1955,11 @@ export const INIT_PRODUCTS = [
         "sold": 380,
         "thumb": "https://digital-world-2.myshopify.com/cdn/shop/products/z1_2_1024x1024.jpg?v=1491404910",
         "images": [],
-        "color": [],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T06:14:51.438Z",
         "updatedAt": "2024-01-24T06:14:51.438Z",
@@ -1638,6 +1977,17 @@ export const INIT_PRODUCTS = [
             "Storage temperature: 0° - 158°",
             "5-year limited warranty"
         ],
+        "variants": [
+            {
+                "label": "Capacity",
+                "variants": [
+                    "16GB",
+                    "32GB",
+                    "64GB",
+                    "128GB"
+                ]
+            }
+        ],
         "brand": "65b08a737f7549b0b1e85536",
         "price": 17164,
         "category": "65b08a547f7549b0b1e85533",
@@ -1648,8 +1998,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1491404811",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1024x1024.jpg?v=1491404811"
         ],
-        "color": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:58:07.277Z",
         "updatedAt": "2024-01-24T03:58:07.277Z",
@@ -1671,6 +2024,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 318 x 259 x 30.4 cmM",
             "Weight: 2.23 kg"
         ],
+        "variants": [],
         "brand": "65b07b823d16e7a992945632",
         "price": 152010,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1682,8 +2036,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_1_bac0625f-a20a-431b-b73b-0ca2ec0e1495_1024x1024.jpg?v=1491404787",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_ab603453-7471-477c-a63d-987e838aca3b_1024x1024.jpg?v=1491404787"
         ],
-        "color": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:54:08.456Z",
         "updatedAt": "2024-01-24T03:54:08.456Z",
@@ -1705,6 +2062,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 325 x 227 x 17 cmM",
             "Weight: 1.35 kg"
         ],
+        "variants": [],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 292233,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1716,8 +2074,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_4_1024x1024.jpg?v=1491404771",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_4_1024x1024.jpg?v=1491404771"
         ],
-        "color": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:53:09.022Z",
         "updatedAt": "2024-01-24T03:53:09.022Z",
@@ -1739,6 +2100,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 212,4 x 304.1 x 14,9 cmM",
             "Weight: 1.37 kg"
         ],
+        "variants": [],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 368116,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1750,8 +2112,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z4_1_4c7eeac9-df0b-4725-8a45-cb6c87b42eba_1024x1024.jpg?v=1491404800",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z5_1_1024x1024.jpg?v=1491404800"
         ],
-        "color": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:51:59.022Z",
         "updatedAt": "2024-01-24T03:51:59.022Z",
@@ -1773,6 +2138,16 @@ export const INIT_PRODUCTS = [
             "Dimensions: 339 x 235 x 21.9 cmM",
             "Weight: 1.65 kg"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "red",
+                    "blue",
+                    "white"
+                ]
+            }
+        ],
         "brand": "65b07b5f3d16e7a992945626",
         "price": 7342684,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1784,12 +2159,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_1_f7b95ca1-d4cf-4b52-a22a-481db6b06c82_1024x1024.jpg?v=1491404807",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1_59dcf671-2402-42e8-9c71-d1a262eca464_1024x1024.jpg?v=1491404807"
         ],
-        "color": [
-            "RED",
-            "BLUE",
-            "WHITE"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:50:39.492Z",
         "updatedAt": "2024-01-24T03:50:39.492Z",
@@ -1811,6 +2185,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 323.3 x 227.1 x 18.95 cmM",
             "Weight: 1.7 kg"
         ],
+        "variants": [],
         "brand": "65b07b9a3d16e7a99294563b",
         "price": 220771,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1822,8 +2197,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2_eda0eb59-ee79-4c50-b724-c9ed562d180b_1024x1024.jpg?v=1491404804",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_0267f8b8-d3ca-475f-a6f2-0a999f863a0a_1024x1024.jpg?v=1491404804"
         ],
-        "color": [],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:49:31.079Z",
         "updatedAt": "2024-01-24T03:49:31.079Z",
@@ -1845,6 +2223,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 383 x 243 x 22.5 cmM",
             "Weight: 2 kg"
         ],
+        "variants": [],
         "brand": "65b07ba23d16e7a99294563e",
         "price": 196214,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1856,8 +2235,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/x3_1024x1024.jpg?v=1491404795",
             "https://digital-world-2.myshopify.com/cdn/shop/products/x1_1024x1024.jpg?v=1491404795"
         ],
-        "color": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:48:32.185Z",
         "updatedAt": "2024-01-24T03:48:32.185Z",
@@ -1879,6 +2261,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 382 x 263 x 24.4 cmM",
             "Weight: 2 kg"
         ],
+        "variants": [],
         "brand": "65b07ba23d16e7a99294563e",
         "price": 208492,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1890,8 +2273,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_2_b21a3aa8-86ed-4338-985d-0bfca8fea6e0_1024x1024.jpg?v=1491404782",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_2_86e4ff89-2434-4fe7-b758-49d789152900_1024x1024.jpg?v=1491404782"
         ],
-        "color": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:47:11.735Z",
         "updatedAt": "2024-01-24T03:47:11.735Z",
@@ -1913,6 +2299,7 @@ export const INIT_PRODUCTS = [
             "Dimensions: 377 x 264 x 22.9 cmM",
             "Weight: 2.3 kg"
         ],
+        "variants": [],
         "brand": "65b07b893d16e7a992945635",
         "price": 183935,
         "category": "65b07a8613ffefd90ae0131b",
@@ -1924,8 +2311,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_6f644814-23bf-4439-80ff-0b5d50baf196_1024x1024.jpg?v=1491404790",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_76a134cf-ab12-45ae-bf1d-54a1ec20982d_1024x1024.jpg?v=1491404790"
         ],
-        "color": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:45:58.980Z",
         "updatedAt": "2024-01-24T03:45:58.980Z",
@@ -1947,6 +2337,25 @@ export const INIT_PRODUCTS = [
             "Internal: 16/32/64/128 GB, 2 GB RAM",
             "Camera: 8 MP, f/2.4 - 1.2 MP, f/2.2"
         ],
+        "variants": [
+            {
+                "label": "Size",
+                "variants": [
+                    "16GB",
+                    "32GB",
+                    "64GB",
+                    "128GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "space gray",
+                    "silver",
+                    "gold"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 88161,
         "category": "65b07a7f13ffefd90ae01318",
@@ -1959,12 +2368,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-ipad-air-2-3_1024x1024.jpg?v=1491404862",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-ipad-air-2-4_1024x1024.jpg?v=1491404862"
         ],
-        "color": [
-            "SPACE GRAY",
-            "SILVER",
-            "GOLD"
-        ],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:43:22.688Z",
         "updatedAt": "2024-01-24T03:43:22.688Z",
@@ -1986,6 +2394,24 @@ export const INIT_PRODUCTS = [
             "Internal: 32/128/256 GB, 4 GB RAM",
             "Camera: 8 MP - 1.2 MP"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "32GB",
+                    "128GB",
+                    "256GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "space gray",
+                    "silver",
+                    "gold"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 343804,
         "category": "65b07a7f13ffefd90ae01318",
@@ -1999,12 +2425,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-ipad-pro-4_1024x1024.jpg?v=1491404844",
             "https://digital-world-2.myshopify.com/cdn/shop/products/apple-ipad-pro-5_1024x1024.jpg?v=1491404844"
         ],
-        "color": [
-            "SPACE GRAY",
-            "SILVER",
-            "GOLD"
-        ],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:41:35.034Z",
         "updatedAt": "2024-01-24T03:41:35.034Z",
@@ -2026,6 +2451,7 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 4 GB RAM",
             "Camera: 8 MP - 2 MP"
         ],
+        "variants": [],
         "brand": "65b07b5f3d16e7a992945626",
         "price": 68760,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2037,8 +2463,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/asus-zenpad-3-80-z581kl-1_1024x1024.jpg?v=1491404859",
             "https://digital-world-2.myshopify.com/cdn/shop/products/asus-zenpad-3-80-z581kl-2_1024x1024.jpg?v=1491404859"
         ],
-        "color": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:40:05.299Z",
         "updatedAt": "2024-01-24T03:40:05.299Z",
@@ -2060,6 +2489,7 @@ export const INIT_PRODUCTS = [
             "Internal: 8 GB, 1 GB RAM",
             "Camera: 2 MP"
         ],
+        "variants": [],
         "brand": "65b085f602254210d454db50",
         "price": 24311,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2072,8 +2502,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/huawei-mediapad-t1-70-2_1024x1024.jpg?v=1491404838",
             "https://digital-world-2.myshopify.com/cdn/shop/products/huawei-mediapad-t1-70-11_1024x1024.jpg?v=1491404838"
         ],
-        "color": [],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:39:05.201Z",
         "updatedAt": "2024-01-24T03:39:05.201Z",
@@ -2095,6 +2528,7 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 3 GB RAM",
             "Camera: 13 MP - 5 MP"
         ],
+        "variants": [],
         "brand": "65b07b893d16e7a992945635",
         "price": 122541,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2107,8 +2541,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/lenovo-yoga-tab3-plus1_1024x1024.jpg?v=1491404819",
             "https://digital-world-2.myshopify.com/cdn/shop/products/lenovo-yoga-tab3-plus2_1024x1024.jpg?v=1491404819"
         ],
-        "color": [],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:37:05.146Z",
         "updatedAt": "2024-01-24T03:37:05.146Z",
@@ -2130,6 +2567,7 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 2 GB RAM",
             "Camera: 5 MP - 5 MP"
         ],
+        "variants": [],
         "brand": "65b07b5a3d16e7a992945623",
         "price": 90617,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2140,8 +2578,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-2_1024x1024.jpg?v=1491404930",
             "https://digital-world-2.myshopify.com/cdn/shop/products/Untitled-3_1024x1024.jpg?v=1491404930"
         ],
-        "color": [],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:35:40.629Z",
         "updatedAt": "2024-01-24T03:35:40.629Z",
@@ -2163,6 +2604,22 @@ export const INIT_PRODUCTS = [
             "Internal: 16/32 GB, 3 GB RAM",
             "Camera: 8 MP - 2.1 MP"
         ],
+        "variants": [
+            {
+                "label": "Size",
+                "variants": [
+                    "16GB",
+                    "32GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "dazzling white",
+                    "titanium bronze"
+                ]
+            }
+        ],
         "brand": "65b07b553d16e7a992945620",
         "price": 137271,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2174,11 +2631,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-tab-s-84-1_1024x1024.jpg?v=1491404867",
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-tab-s-84-3_1024x1024.jpg?v=1491404867"
         ],
-        "color": [
-            "DAZZLING WHITE",
-            "TITANIUM BRONZE"
-        ],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:34:24.299Z",
         "updatedAt": "2024-01-24T03:34:24.299Z",
@@ -2200,6 +2657,15 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 3 GB RAM",
             "Camera: 8.1 MP - 5.1 MP"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "white"
+                ]
+            }
+        ],
         "brand": "65b080ed71711a00623b5c86",
         "price": 171656,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2213,11 +2679,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/sony-xperia-z4-tablet-2_1024x1024.jpg?v=1491404927",
             "https://digital-world-2.myshopify.com/cdn/shop/products/sony-xperia-z4-tablet-2_dbebeed1-de5c-4bff-9c53-8aa708c32ca5_1024x1024.jpg?v=1491404927"
         ],
-        "color": [
-            "BLACK",
-            "WHITE"
-        ],
         "totalRating": 4,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:33:14.855Z",
         "updatedAt": "2024-01-24T03:33:14.855Z",
@@ -2239,6 +2705,30 @@ export const INIT_PRODUCTS = [
             "Internal: 16GB/2GB - 32GB/3GB",
             "Camera: 16 MP, f/2.0 - 5 MP, f/2.0"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "12GB",
+                    "32GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "silver",
+                    "gray",
+                    "gold"
+                ]
+            },
+            {
+                "label": "Ram",
+                "variants": [
+                    "2GB",
+                    "3GB"
+                ]
+            }
+        ],
         "brand": "65b07df57bdd1d4056a080bc",
         "price": 43218,
         "category": "65b07a7f13ffefd90ae01318",
@@ -2252,12 +2742,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/xiaomi-redmi-note-3-2_1024x1024.jpg?v=1491404888",
             "https://digital-world-2.myshopify.com/cdn/shop/products/xiaomi-redmi-note-3-3_1024x1024.jpg?v=1491404889"
         ],
-        "color": [
-            "SILVER",
-            "GRAY",
-            "GOLD"
-        ],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:31:57.709Z",
         "updatedAt": "2024-01-24T03:31:57.709Z",
@@ -2279,6 +2768,23 @@ export const INIT_PRODUCTS = [
             "Internal: 32/128 GB, 4 GB RAM",
             "Camera: 12.3 MP, f/2.0 - 8 MP, f/2.4"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "32GB",
+                    "128GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "quite black",
+                    "very silver",
+                    "really blue"
+                ]
+            }
+        ],
         "brand": "65b083a4273c3e5dbaca326c",
         "price": 204883,
         "category": "65b07a7513ffefd90ae01315",
@@ -2294,12 +2800,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/gsmarena_020_1024x1024.jpg?v=1491404903",
             "https://digital-world-2.myshopify.com/cdn/shop/products/gsmarena_023_1024x1024.jpg?v=1491404903"
         ],
-        "color": [
-            "QUITE BLACK",
-            "VERY SILVER",
-            "REALLY BLUE"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:28:53.567Z",
         "updatedAt": "2024-01-24T03:28:53.567Z",
@@ -2321,6 +2826,24 @@ export const INIT_PRODUCTS = [
             "Internal: 32/64 GB, 4 GB RAM",
             "Camera: 12 MP, f/1.8 - 5 MP, f/1.8"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "32GB",
+                    "64GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "carbon gray",
+                    "topaz gold",
+                    "glacier silver",
+                    "camellia red"
+                ]
+            }
+        ],
         "brand": "65b083342dbd007824694a99",
         "price": 126962,
         "category": "65b07a7513ffefd90ae01315",
@@ -2332,13 +2855,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/htc-10-5_1024x1024.jpg?v=1491404875",
             "https://digital-world-2.myshopify.com/cdn/shop/products/htc-10-r_1024x1024.jpg?v=1491404875"
         ],
-        "color": [
-            "CARBON GRAY",
-            "TOPAZ GOLD",
-            "GLACIER SILVER",
-            "CAMELLIA RED"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:26:57.742Z",
         "updatedAt": "2024-01-24T03:26:57.742Z",
@@ -2360,6 +2881,24 @@ export const INIT_PRODUCTS = [
             "Internal: 32/128 GB, 2 GB RAM",
             "Camera: 12 MP - 7 MP"
         ],
+        "variants": [
+            {
+                "label": "Capacity",
+                "variants": [
+                    "32GB",
+                    "64GB",
+                    "128GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "gold",
+                    "white"
+                ]
+            }
+        ],
         "brand": "65b07b4e3d16e7a99294561d",
         "price": 220771,
         "category": "65b07a7513ffefd90ae01315",
@@ -2373,12 +2912,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/3_1024x1024.jpg?v=1491404827",
             "https://digital-world-2.myshopify.com/cdn/shop/products/4_1024x1024.jpg?v=1491404827"
         ],
-        "color": [
-            "BLACK",
-            "GOLD",
-            "WHITE"
-        ],
         "totalRating": 2,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:25:05.346Z",
         "updatedAt": "2024-01-24T03:25:05.346Z",
@@ -2386,8 +2924,8 @@ export const INIT_PRODUCTS = [
     },
     {
         "_id": "65b082b52dbd007824694a93",
-        "title": "SLG G5",
-        "slug": "slg-g5",
+        "title": "LG G5",
+        "slug": "lg-g5",
         "description": [
             "Technology: GSM / CDMA / HSPA / LTE",
             "Dimensions: 149.4 x 73.9 x 7.7 mm",
@@ -2400,6 +2938,7 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 4 GB RAM",
             "Camera: Dual 16 MP (29mm, f/1.8) + 8 MP (12mm, f/2.4)"
         ],
+        "variants": [],
         "brand": "65b07b5a3d16e7a992945623",
         "price": 144889,
         "category": "65b07a7513ffefd90ae01315",
@@ -2413,8 +2952,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/lg-g5-1_1024x1024.jpg?v=1491404872",
             "https://digital-world-2.myshopify.com/cdn/shop/products/lg-g5-02_1024x1024.jpg?v=1491404872"
         ],
-        "color": [],
         "totalRating": 3,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:23:33.395Z",
         "updatedAt": "2024-01-24T03:23:33.395Z",
@@ -2436,6 +2978,22 @@ export const INIT_PRODUCTS = [
             "Internal: 16/32 GB, 3 GB RAM",
             "Camera: 13 MP, f/1.9 - 8 MP, f/1.9"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "12GB",
+                    "16GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "gold"
+                ]
+            }
+        ],
         "brand": "65b07b553d16e7a992945620",
         "price": 102542,
         "category": "65b07a7513ffefd90ae01315",
@@ -2448,11 +3006,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-j7-prime-2_1024x1024.jpg?v=1491404895",
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-j7-prime-3_1024x1024.jpg?v=1491404895"
         ],
-        "color": [
-            "BLACK",
-            "GOLD"
-        ],
         "totalRating": 3.5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:22:12.897Z",
         "updatedAt": "2024-01-24T03:22:12.897Z",
@@ -2474,6 +3032,14 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 4 GB RAM",
             "Camera: 112 MP - 5 MP"
         ],
+        "variants": [
+            {
+                "label": "Size",
+                "variants": [
+                    "large"
+                ]
+            }
+        ],
         "brand": "65b07b553d16e7a992945620",
         "price": 220771,
         "category": "65b07a7513ffefd90ae01315",
@@ -2486,8 +3052,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-s6_1024x1024.png?v=1491404832",
             "https://digital-world-2.myshopify.com/cdn/shop/products/samsung-galaxy-s6-edge-plus-black-sapphire-spin.0001_1024x1024.png?v=1491404832"
         ],
-        "color": [],
         "totalRating": 5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:20:31.185Z",
         "updatedAt": "2024-01-24T03:20:31.185Z",
@@ -2509,6 +3078,24 @@ export const INIT_PRODUCTS = [
             "Internal: 32/64 GB",
             "Camera: 23 MP, f/2.0 - 13 MP, f/2.0"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "32GB",
+                    "64GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "mineral black",
+                    "platinum",
+                    "forest blue",
+                    "deep pink"
+                ]
+            }
+        ],
         "brand": "65b080ed71711a00623b5c86",
         "price": 173866,
         "category": "65b07a7513ffefd90ae01315",
@@ -2521,13 +3108,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/gsmarena_015_1024x1024.jpg?v=1491404881",
             "https://digital-world-2.myshopify.com/cdn/shop/products/sony-xperia-xz1_1024x1024.jpg?v=1491404881"
         ],
-        "color": [
-            "MINERAL BLACK",
-            "PLATINUM",
-            "FOREST BLUE",
-            "DEEP PINK"
-        ],
         "totalRating": 1,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:18:07.587Z",
         "updatedAt": "2024-01-24T03:18:07.587Z",
@@ -2549,6 +3134,15 @@ export const INIT_PRODUCTS = [
             "Internal: 32 GB, 4 GB RAM",
             "Camera: 13MB - 20 MP"
         ],
+        "variants": [
+            {
+                "label": "Color",
+                "variants": [
+                    "gold",
+                    "gray"
+                ]
+            }
+        ],
         "brand": "65b080358d539263b1c733d6",
         "price": 61393,
         "category": "65b07a7513ffefd90ae01315",
@@ -2560,11 +3154,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/vivo-v5-1_1024x1024.jpg?v=1491404855",
             "https://digital-world-2.myshopify.com/cdn/shop/products/vivo-v5-2_1024x1024.jpg?v=1491404855"
         ],
-        "color": [
-            "GOLD",
-            "GRAY"
-        ],
         "totalRating": 4.5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:15:08.556Z",
         "updatedAt": "2024-01-24T03:15:08.556Z",
@@ -2586,6 +3180,32 @@ export const INIT_PRODUCTS = [
             "Internal: 32GB/64GB/128GB",
             "Camera: 16 MP, f/2.0 - 4 MP, f/2.0"
         ],
+        "variants": [
+            {
+                "label": "Internal",
+                "variants": [
+                    "32GB",
+                    "64GB",
+                    "128GB"
+                ]
+            },
+            {
+                "label": "Color",
+                "variants": [
+                    "black",
+                    "white",
+                    "gold",
+                    "ceramic"
+                ]
+            },
+            {
+                "label": "Ram",
+                "variants": [
+                    "2GB",
+                    "3GB"
+                ]
+            }
+        ],
         "brand": "65b07df57bdd1d4056a080bc",
         "price": 74900,
         "category": "65b07a7513ffefd90ae01315",
@@ -2598,13 +3218,11 @@ export const INIT_PRODUCTS = [
             "https://digital-world-2.myshopify.com/cdn/shop/products/z2_1024x1024.jpg?v=1491404851",
             "https://digital-world-2.myshopify.com/cdn/shop/products/z3_1024x1024.jpg?v=1491404851"
         ],
-        "color": [
-            "BLACK",
-            "WHITE",
-            "GOLD",
-            "CERAMIC"
-        ],
         "totalRating": 3.5,
+        "information": {
+            "warranty": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Warranty Information</h2><p>LIMITED WARRANTIES<br>Limited Warranties are non-transferable. The following Limited Warranties are given to the original retail purchaser of the following Ashley Furniture Industries, Inc.Products:</p><p>Frames Used In Upholstered and Leather Products<br>Limited Lifetime Warranty<br> A Limited Lifetime Warranty applies to all frames used in sofas, couches, love seats, upholstered chairs, ottomans, sectionals, and sleepers. Ashley Furniture Industries,Inc. warrants these components to you, the original retail purchaser, to be free from material manufacturing defects.</p></div>',
+            "delivery": '<div style="text-align:justify;"><h2 style="font-size:20px;font-weight:500;text-transform:uppercase;">Purchasing &amp; Delivery</h2><p class="mb-2">Before you make your purchase, it\'s helpful to know the measurements of the area you plan to place the furniture. You should also measure any doorways and hallways through which the furniture will pass to get to its final destination.</p><p class="mb-2">Shopify Shop requires that all products are properly inspected BEFORE you take it home to insure there are no surprises. Our team is happy to open all packages and will assist in the inspection process. We will then reseal packages for safe transport. We encourage all customers to bring furniture pads or blankets to protect the items during transport as well as rope or tie downs. Shopify Shop will not be responsible for damage that occurs after leaving the store or during transit. It is the purchaser’s responsibility to make sure the correct items are picked up and in good condition.</p><p class="mb-2">Customers are able to pick the next available delivery day that best fits their schedule. However, to route stops as efficiently as possible, Shopify Shop will provide the time frame. Customers will not be able to choose a time. You will be notified in advance of your scheduled time frame. Please make sure that a responsible adult (18 years or older) will be home at that time.<br/>In preparation for your delivery, please remove existing furniture, pictures, mirrors, accessories, etc. to prevent damages. Also insure that the area where you would like your furniture placed is clear of any old furniture and any other items that may obstruct the passageway of the delivery team. Shopify Shop will deliver, assemble, and set-up your new furniture purchase and remove all packing materials from your home. Our delivery crews are not permitted to move your existing furniture or other household items. Delivery personnel will attempt to deliver the purchased items in a safe and controlled manner but will not attempt to place furniture if they feel it will result in damage to the product or your home. Delivery personnel are unable to remove doors, hoist furniture or carry furniture up more than 3 flights of stairs. An elevator must be available for deliveries to the 4th floor and above.</p></div>',
+        },
         "ratings": [],
         "createdAt": "2024-01-24T03:09:44.426Z",
         "updatedAt": "2024-01-24T03:09:44.426Z",

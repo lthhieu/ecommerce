@@ -52,7 +52,16 @@ export class Product {
     images: string[]
 
     @Prop({ type: mongoose.Schema.Types.Array })
-    color: string[];
+    variants: {
+        label: string,
+        variants: string[]
+    }[];
+
+    @Prop({ type: {} })
+    information: {
+        warranty: string,
+        delivery: string
+    };
 
     @Prop({ type: [RatingsSchema] })
     ratings: Ratings[];

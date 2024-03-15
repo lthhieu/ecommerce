@@ -26,7 +26,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new TransformInterceptor(reflector));
   //cors
   app.enableCors({
-    origin: configService.get<string>('FRONTEND_URI'),
+    origin: [configService.get<string>('FRONTEND_URI'), "http://localhost:3000"],
     credentials: true
   });
   //global cookies
