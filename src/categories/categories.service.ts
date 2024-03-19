@@ -13,6 +13,10 @@ export class CategoriesService {
   async findOneByTitle(title: string) {
     return await this.categoryModel.findOne({ title })
   }
+
+  async findOneBySlug(slug: string) {
+    return await this.categoryModel.findOne({ slug })
+  }
   async create(createCategoryDto: CreateCategoryDto) {
     //check title exist
     let check = await this.findOneByTitle(createCategoryDto.title)

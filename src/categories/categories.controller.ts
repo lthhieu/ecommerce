@@ -5,7 +5,7 @@ import { UpdateCategoryDto } from './dto/update-category.dto';
 import { CheckPolicies, Public, ResponseMessage } from 'src/configs/custom.decorator';
 import { Action } from 'src/configs/define.interface';
 import { CategorySubject } from 'src/configs/define.class';
-import { CATEGORY_CREATED, CATEGORY_DELETED, CATEGORY_FETCH_ALL, CATEGORY_FETCH_BY_ID, CATEGORY_UPDATED } from 'src/configs/response.constants';
+import { CATEGORY_CREATED, CATEGORY_DELETED, CATEGORY_FETCH_ALL, CATEGORY_FETCH_BY_ID, CATEGORY_FETCH_BY_SLUG, CATEGORY_UPDATED } from 'src/configs/response.constants';
 
 @Controller('categories')
 export class CategoriesController {
@@ -23,6 +23,13 @@ export class CategoriesController {
   @ResponseMessage(CATEGORY_FETCH_ALL)
   findAll() {
     return this.categoriesService.findAll();
+  }
+
+  @ResponseMessage(CATEGORY_FETCH_BY_SLUG)
+  @Get('slug/:slug')
+  @Public()
+  findOneBySlug(@Param('slug') slug: string) {
+    return this.categoriesService.findOneBySlug(slug);
   }
 
   @Get(':id')
