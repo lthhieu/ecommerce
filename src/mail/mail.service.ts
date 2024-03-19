@@ -14,7 +14,7 @@ export class MailService {
         private usersService: UsersService,
         private configService: ConfigService) { }
     async sendEmailResetPassword(email: string) {
-        const user = await this.usersService.findOneByEmail(email);
+        const user = await this.usersService.findOneByEmail(email, 'SYSTEM');
         if (!user) throw new BadRequestException(NOT_FOUND_EMAIL)
         const receiver = user.firstName + " " + user.lastName
         //tạo chuỗi ngẫu nhiên gửi mail

@@ -21,10 +21,10 @@ export class User {
     @Prop()
     lastName: string;
 
-    @Prop({ required: true, unique: true })
+    @Prop()
     email: string;
 
-    @Prop({ required: true })
+    @Prop()
     password: string;
 
     @Prop()
@@ -68,6 +68,12 @@ export class User {
 
     @Prop()
     confirmEmailExpire: string;
+
+    @Prop({ default: 'SYSTEM' })
+    type: string;
+
+    @Prop()
+    username: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

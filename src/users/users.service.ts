@@ -6,12 +6,12 @@ import { User } from './schemas/user.schema';
 import mongoose, { Model } from 'mongoose';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import crypto from 'crypto'
-import { CONFIRM_EMAIL_TOKEN_EXPIRE, FOUND_EMAIL, INVALID_ID, INVALID_TOKEN_2, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
+import { CONFIRM_EMAIL_TOKEN_EXPIRE, FOUND_EMAIL, INVALID_ID, NOT_USER_BY_ID, RESET_PASSWORD_TOKEN_EXPIRE } from 'src/configs/response.constants';
 import aqp from 'api-query-params';
-import { Request, Response, } from 'express';
 import ms from 'ms';
 import { ConfigService } from '@nestjs/config';
 import { MailService } from 'src/mail/mail.service';
+import { LoginWithProviders } from 'src/auth/dto/login-with-providers.dto';
 
 @Injectable()
 export class UsersService {
@@ -23,8 +23,8 @@ export class UsersService {
     const salt = genSaltSync(10);
     return hashSync(plaintext, salt);
   }
-  async findOneByEmail(email: string) {
-    return await this.userModel.findOne({ email })
+  async findOneByEmail(email: string, type: string) {
+    return await this.userModel.findOne({ email, type })
   }
   comparePassword(pass: string, hash: string) {
     return compareSync(pass, hash)
@@ -32,7 +32,7 @@ export class UsersService {
 
   async create(createUserDto: CreateUserDto) {
     //check mail exist
-    let check = await this.findOneByEmail(createUserDto.email)
+    let check = await this.findOneByEmail(createUserDto.email, 'SYSTEM')
     if (check && !check?.confirmEmailToken) {
       throw new BadRequestException(FOUND_EMAIL)
     }
@@ -56,6 +56,19 @@ export class UsersService {
     }
 
     return this.mailService.sendEmailConfirmEmail(createUserDto, token)
+  }
+
+  async createWithProviders(loginWithProviders: LoginWithProviders) {
+    const { type, username } = loginWithProviders
+    //check username exist
+    let check = await this.userModel.findOne({ type, username })
+    if (check) {
+      return check
+    }
+    let newUser = await this.userModel.create({
+      username, type
+    })
+    return newUser
   }
 
   async checkConfirmEmailToken(confirmEmailToken: string) {
@@ -130,7 +143,7 @@ export class UsersService {
       throw new BadRequestException(INVALID_ID)
     }
     const { email } = updateUserDto
-    const user = await this.findOneByEmail(email)
+    const user = await this.findOneByEmail(email, 'SYSTEM')
     //check unique email
     if (user && JSON.stringify(user._id) !== JSON.stringify(id)) {
       throw new BadRequestException(FOUND_EMAIL)
