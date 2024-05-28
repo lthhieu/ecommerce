@@ -46,7 +46,6 @@ export class AuthService {
 
     loginWithProviders = async (loginWithProviders: LoginWithProviders, response: Response) => {
         const login = await this.usersService.createWithProviders(loginWithProviders)
-
         const { _id, username: email, role } = login
         const payload = { _id, email, role, sub: 'token login with providers', iss: 'from server' };
         const user: IUser = { _id: _id.toString(), email, role }

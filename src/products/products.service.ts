@@ -37,13 +37,25 @@ export class ProductsService {
   }
 
   async findAll(page: number, limit: number, qs: string) {
-
     let { filter, projection, population } = aqp(qs);
+
     let { sort }: { sort: any } = aqp(qs);
 
     delete filter.current
     delete filter.pageSize
-
+    // filter = {
+    //   ...filter, $or: [
+    //     {
+    //       'variants.label': 'Color',
+    //       'variants.variants': { $in: ['very silver'] }
+    //     },
+    //     // {
+    //     //   'variants.label': 'Ram',
+    //     //   'variants.variants': { $in: ['2GB', '4GB'] }
+    //     // }
+    //   ]
+    // }
+    // console.log(filter)
     page = page ? page : 1
     limit = limit ? limit : 10
     let skip = (page - 1) * limit
@@ -115,34 +127,37 @@ export class ProductsService {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
+
     const { comment, postedAt, star } = updateProductRatingDto
-    let productToUdt = await this.findOne(id)
-    let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
-    if (checkRating) {
-      //update star and comment
-      await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
-        $set: {
-          "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
-        }
-      })
-    } else {
-      //insert
-      await this.productModel.updateOne({ _id: id }, {
-        $push: {
-          ratings: { comment, postedAt, star, postedBy: user._id }
-        }
-      })
-    }
-    //update totalRating
-    let productUpdatedRating = await this.findOne(id)
-    const countRating = productUpdatedRating.ratings.length
-    const sumRating = productUpdatedRating.ratings.reduce(
-      (accumulator, item) => accumulator + +item.star,
-      0,
-    )
-    return await this.productModel.findOneAndUpdate({ _id: id }, {
-      totalRating: Math.round(sumRating / countRating)
-    }, { new: true })
+    console.log(comment, postedAt, star)
+    // let productToUdt = await this.findOne(id)
+    // let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
+    // if (checkRating) {
+    //   //update star and comment
+    //   await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
+    //     $set: {
+    //       "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
+    //     }
+    //   })
+    // } else {
+    //   //insert
+    //   await this.productModel.updateOne({ _id: id }, {
+    //     $push: {
+    //       ratings: { comment, postedAt, star, postedBy: user._id }
+    //     }
+    //   })
+    // }
+    // //update totalRating
+    // let productUpdatedRating = await this.findOne(id)
+    // const countRating = productUpdatedRating.ratings.length
+    // const sumRating = productUpdatedRating.ratings.reduce(
+    //   (accumulator, item) => accumulator + +item.star,
+    //   0,
+    // )
+    // return await this.productModel.findOneAndUpdate({ _id: id }, {
+    //   totalRating: Math.round(sumRating / countRating)
+    // }, { new: true })
+    return 'ok'
   }
   async updateImages(id: string, updateProductImageDto: UpdateProductImageDto) {
     if (!mongoose.Types.ObjectId.isValid(id)) {

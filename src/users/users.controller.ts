@@ -8,7 +8,6 @@ import { Action, IUser } from 'src/configs/define.interface';
 import { UserSubject } from 'src/configs/define.class';
 import { CaslAbilityFactory } from 'src/casl/casl-ability.factory/casl-ability.factory';
 import { ForbiddenError } from '@casl/ability';
-import { Request } from 'express';
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService,
