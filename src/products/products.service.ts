@@ -127,37 +127,36 @@ export class ProductsService {
     if (!mongoose.Types.ObjectId.isValid(id)) {
       throw new BadRequestException(INVALID_ID)
     }
-
     const { comment, postedAt, star } = updateProductRatingDto
-    console.log(comment, postedAt, star)
-    // let productToUdt = await this.findOne(id)
-    // let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
-    // if (checkRating) {
-    //   //update star and comment
-    //   await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
-    //     $set: {
-    //       "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
-    //     }
-    //   })
-    // } else {
-    //   //insert
-    //   await this.productModel.updateOne({ _id: id }, {
-    //     $push: {
-    //       ratings: { comment, postedAt, star, postedBy: user._id }
-    //     }
-    //   })
-    // }
-    // //update totalRating
-    // let productUpdatedRating = await this.findOne(id)
-    // const countRating = productUpdatedRating.ratings.length
-    // const sumRating = productUpdatedRating.ratings.reduce(
-    //   (accumulator, item) => accumulator + +item.star,
-    //   0,
-    // )
-    // return await this.productModel.findOneAndUpdate({ _id: id }, {
-    //   totalRating: Math.round(sumRating / countRating)
-    // }, { new: true })
-    return 'ok'
+    // console.log(comment, postedAt, star, user._id)
+    let productToUdt = await this.findOne(id)
+    let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
+    if (checkRating) {
+      //update star and comment
+      await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
+        $set: {
+          "ratings.$.comment": comment, "ratings.$.star": star, "ratings.$.postedAt": postedAt,
+        }
+      })
+    } else {
+      //insert
+      await this.productModel.updateOne({ _id: id }, {
+        $push: {
+          ratings: { comment, postedAt, star, postedBy: user._id }
+        }
+      })
+    }
+    //update totalRating
+    let productUpdatedRating = await this.findOne(id)
+    const countRating = productUpdatedRating.ratings.length
+    const sumRating = productUpdatedRating.ratings.reduce(
+      (accumulator, item) => accumulator + +item.star,
+      0,
+    )
+    return await this.productModel.findOneAndUpdate({ _id: id }, {
+      totalRating: Math.round(sumRating / countRating)
+    }, { new: true })
+    // return 'ok'
   }
   async updateImages(id: string, updateProductImageDto: UpdateProductImageDto) {
     if (!mongoose.Types.ObjectId.isValid(id)) {
