@@ -154,7 +154,7 @@ export class ProductsService {
       0,
     )
     return await this.productModel.findOneAndUpdate({ _id: id }, {
-      totalRating: Math.round(sumRating / countRating)
+      totalRating: Math.round((sumRating / countRating) * 10) / 10
     }, { new: true })
     // return 'ok'
   }
