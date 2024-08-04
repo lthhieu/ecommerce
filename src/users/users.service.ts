@@ -59,14 +59,16 @@ export class UsersService {
   }
 
   async createWithProviders(loginWithProviders: LoginWithProviders) {
-    const { type, username } = loginWithProviders
+    const { type, username, avatar, name } = loginWithProviders
     //check username exist
     let check = await this.userModel.findOne({ type, username })
     if (check) {
       return check
     }
+    const firstName = name.split(' ').slice(0, -1).join(' ');
+    const lastName = name.split(' ').slice(-1).join(' ');
     let newUser = await this.userModel.create({
-      username, type
+      username, type, avatar, firstName, lastName
     })
     return newUser
   }

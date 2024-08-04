@@ -6,4 +6,10 @@ export class LoginWithProviders {
 
     @IsNotEmpty()
     type: string;
+
+    @IsNotEmpty()
+    name: string;
+
+    @IsNotEmpty()
+    avatar: string;
 }

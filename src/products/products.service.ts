@@ -91,7 +91,10 @@ export class ProductsService {
       throw new BadRequestException(INVALID_ID)
     }
     const product = await this.productModel.findOne({ _id: id })
-      .populate([{ path: "brand", select: { title: 1 } }, { path: "category", select: { title: 1 } }])
+      .populate([
+        { path: "brand", select: { title: 1 } },
+        { path: "category", select: { title: 1 } },
+        { path: "ratings.postedBy", select: { firstName: 1, lastName: 1, avatar: 1 } }])
     if (!product) {
       throw new BadRequestException(NOT_PRODUCT_BY_ID)
     }

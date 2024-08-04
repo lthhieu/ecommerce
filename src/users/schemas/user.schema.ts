@@ -74,6 +74,9 @@ export class User {
 
     @Prop()
     username: string;
+
+    @Prop({ default: '' })
+    avatar: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
