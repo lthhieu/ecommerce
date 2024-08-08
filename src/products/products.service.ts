@@ -133,7 +133,8 @@ export class ProductsService {
     const { comment, postedAt, star } = updateProductRatingDto
     // console.log(comment, postedAt, star, user._id)
     let productToUdt = await this.findOne(id)
-    let checkRating = productToUdt.ratings.find(item => item.postedBy.toString() === user._id)
+    //@ts-ignore
+    let checkRating = productToUdt.ratings.find((item) => item.postedBy._id.toString() === user._id)
     if (checkRating) {
       //update star and comment
       await this.productModel.updateOne({ _id: id, "ratings.postedBy": user._id }, {
